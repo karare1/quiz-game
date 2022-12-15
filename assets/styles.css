@@ -1,0 +1,81 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-image: url('../assets/images/questions-marks.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#container-start {
+    background-color: silver;
+    position: absolute;
+    width: 60%;
+    height: auto;
+    margin: 7% 19%;
+    padding: 1%;
+}
+
+#h1-quiz {
+    text-align: center;
+    font-size: 2rem;
+    margin: 3% auto;
+}
+
+#h2-quiz {
+    text-align: center;
+}
+
+#start-btn-div {
+    text-align: center;
+    margin: 5% 0;
+}
+
+#highscore-btn-div {
+    text-align: center;
+    margin: 5% 0;
+}
+
+#start-btn {
+    padding: 2% 10%; 
+    background-color: chartreuse;
+    
+}
+
+#link-to-quizz {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#highscore-btn {
+    padding: 1% 10%; 
+    background-color: silver;
+    margin-top: 2%;
+}
+
+#link-to-highscore {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1rem;
+}
+.btn-main[disabled]:hover {
+    cursor: not-allowed;
+}
+
+#copyright {
+    text-align: center;
+}
+
+
+
+
+
