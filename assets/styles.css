@@ -82,8 +82,6 @@ body {
 .fa-house {
     font-size: x-large;
     color:chartreuse;
-    
-
 }
 
 .fa-clipboard-list {
@@ -96,6 +94,7 @@ body {
     font-size:x-large;
     color: chartreuse;
 }
+
 .fa-award {
     font-size: x-large;
     color:chartreuse;  
@@ -107,16 +106,31 @@ body {
     font-size:x-large;
     font-weight: bolder;
     padding: 1%;
-    
 }
-.count-div {
+
+.nav-div {
     display: inline;
     background-color: black;
     padding: 1%;
     margin-right: 3%;
 }
+
+.nav-div-home {
+    display: inline;
+    background-color: black;
+    padding: 1%;
+}
+
 #nav-bar {
     text-align: right;
+    margin-top: 2%;
+}
+
+.nav-div-home {
+    display: inline;
+    background-color: black;
+    padding: 1%;
+    margin-right: 39%;
 }
 
 #question {
@@ -128,24 +142,30 @@ body {
     text-align: center;
 }
 
-#play-space {
-    display: flex;
-    width: 100%;
+#answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width:70%;
+    margin-left: 12%;
 }
 
-.image-div {
-    width: 20%;
+#answers div {
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 1.5rem;
 }
 
-image {
-    width: 80%;
+#answers div:hover {
+    background-color: rgb(156, 133, 179);
+    cursor: pointer;
 }
 
 #next-btn {
     padding: 1% 3%;
     float: right;
-    margin-right: 1%;
-    margin-top: 3%;
+    margin: 3% 3% 3% 0;
     background-color:chartreuse;
     display: inline;
 }
@@ -162,24 +182,4 @@ image {
     padding-right: 2%;
     font-weight: bolder;
 }
-#grid-div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width:70%;
-    margin-left: 12%;
-}
-
-#grid-div div {
-    background-color: blueviolet;
-    text-align: center;
-    padding: 5% 0;
-    font-size: 1.5rem;
-}
-
-#grid-div div:hover {
-    background-color: rgb(156, 133, 179);
-    cursor: pointer;
-}
-
 
