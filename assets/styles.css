@@ -4,6 +4,8 @@ margin: 0;
 padding: 0;
 }
 
+/* ------------------------------------index.html-------------------------------------------------- */
+
 body {
     background-image: url('../assets/images/questions-marks.jpg');
     background-repeat: no-repeat;
@@ -13,7 +15,7 @@ body {
     position: relative;
 }
 
-#container-start {
+.container-div {
     background-color: silver;
     position: absolute;
     width: 60%;
@@ -45,7 +47,6 @@ body {
 #start-btn {
     padding: 2% 10%; 
     background-color: chartreuse;
-    
 }
 
 #link-to-quizz {
@@ -67,15 +68,118 @@ body {
     font-weight: 900;
     font-size: 1rem;
 }
+
 .btn-main[disabled]:hover {
     cursor: not-allowed;
 }
 
-#copyright {
+.copyright {
     text-align: center;
 }
 
+/* ------------------------------------game.html--------------------------------------------------- */
 
+.fa-house {
+    font-size: x-large;
+    color:chartreuse;
+    
 
+}
+
+.fa-clipboard-list {
+    font-size: x-large;
+    color:chartreuse;
+   
+}
+
+.fa-hourglass-start{
+    font-size:x-large;
+    color: chartreuse;
+}
+.fa-award {
+    font-size: x-large;
+    color:chartreuse;  
+}
+
+.count {
+    display: inline;
+    color:chartreuse;
+    font-size:x-large;
+    font-weight: bolder;
+    padding: 1%;
+    
+}
+.count-div {
+    display: inline;
+    background-color: black;
+    padding: 1%;
+    margin-right: 3%;
+}
+#nav-bar {
+    text-align: right;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-left: 13%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    width: 70%;
+    text-align: center;
+}
+
+#play-space {
+    display: flex;
+    width: 100%;
+}
+
+.image-div {
+    width: 20%;
+}
+
+image {
+    width: 80%;
+}
+
+#next-btn {
+    padding: 1% 3%;
+    float: right;
+    margin-right: 1%;
+    margin-top: 3%;
+    background-color:chartreuse;
+    display: inline;
+}
+
+#next-btn:hover {
+    background-color: rgb(165, 238, 93);
+}
+
+#span-btn {
+    font-weight: 800;
+}
+
+.fa-chevron-right {
+    padding-right: 2%;
+    font-weight: bolder;
+}
+#grid-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width:70%;
+    margin-left: 12%;
+}
+
+#grid-div div {
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 1.5rem;
+}
+
+#grid-div div:hover {
+    background-color: rgb(156, 133, 179);
+    cursor: pointer;
+}
 
 
