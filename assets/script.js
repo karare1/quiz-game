@@ -126,8 +126,15 @@ function startGame() {
 startGame();
 
 function nextQuestion () {
-  
+  countQtn++;
+  // random question will be picked from the array of our question list
+  const randomQtnInx = Math.floor(Math.random() * listOfQtn.length);
+  console.log(randomQtnInx);
+  // retrieve random questions from the list of questions
+  questionsShown = listOfQtn[randomQtnInx];
+  questionQuiz.innerText = questionsShown.question;
 }
 
+nextQuestion();
 
 
