@@ -23,22 +23,24 @@
             </div>
 
             <div id='pop-up'>
-                <div id= 'pop-up-box'>
+                <div id='pop-up-box'>
                   <span id="close-box">&times;</span>
+
                   <div id ='text-div'>
-                  <h3>Do you think you know everything about winter?</h3>
-                  <h4>Then it's time to test yourself!</h4>
-                  <p>Whether you love it or hate it, winter is one of those magical times of the year.
-                    <i class="fa-solid fa-snowflake"></i>
-                  </p>
-                  <p>When you can wrap up warm with a hot chocolate and cuddle up with someone, 
-                     or when everything glistens in the snow, that's what winter is all about.
-                     <i class="fa-solid fa-temperature-low"></i>
+                    <h3>Do you think you know everything about winter?</h3>
+                    <h4>Then it's time to test yourself!</h4>
+                    <p>Whether you love it or hate it, winter is one of those magical times of the year.
+                        <i class="fa-solid fa-snowflake"></i>
                     </p>
-                  <p>Grab yourself a nice cuppa coffee, a choccy biscuit and enjoy this winter quiz.
-                    <i class="fa-solid fa-mug-hot"></i></p>
-                  </p>  
+                    <p>When you can wrap up warm with a hot chocolate and cuddle up with someone, 
+                        or when everything glistens in the snow, that's what winter is all about.
+                        <i class="fa-solid fa-temperature-low"></i>
+                    </p>
+                    <p>Grab yourself a nice cuppa coffee, a choccy biscuit and enjoy this winter quiz.
+                        <i class="fa-solid fa-mug-hot"></i></p>
+                    </p>  
                   </div>
+
                 </div>
             </div>
               
@@ -54,6 +56,31 @@
             <p class="copyright">karare <i class="fa-solid fa-paw"></i> 2022 </p>
         </footer>
     </div>
-    <script src="assets/script.js" type="text/javascript"></script>
+<script>
+let popUp = document.getElementById("pop-up");
+console.log(popUp);
+let btnAbout = document.getElementById("about-btn");
+console.log(btnAbout);
+let  closeBox = document.getElementById("close-box");
+
+window.onload;
+// clicking on About button will populate pop-up window
+btnAbout.onclick = function() {
+ popUp.style.display = "block";
+}
+// clicking on x will close the pop-up window
+closeBox.onclick = function() {
+  popUp.style.display = "none";
+}
+
+// clicking anywhere outside of the pop-up window will close it
+window.onclick = function(event) {
+  if (event.target == popUp) {
+    popUp.style.display = "none";
+  }
+}
+</script>
+
+<!-- <script src="/assets/script.js" type="text/javascript"></script> -->
 </body>
 </html>
