@@ -42,10 +42,10 @@ let allQtn = [
   },
 
   {question: 'How big was the largest snowflake ever spotted?',
-   option1: '5 inches (12.7cm) wide',
-   option2: '10 inches (25.4 cm) wide',
-   option3: '15 inches (38.1 cm) wide',
-   option4: '20 inches (50.8 cm) wide',
+   option1: '5 inch / 12.7cm wide',
+   option2: '10 inch / 25.4 cm wide',
+   option3: '15 inch / 38.1 cm wide',
+   option4: '20 inch / 50.8 cm wide',
    correct: 3
   },
 
@@ -93,48 +93,50 @@ let allQtn = [
   option1: 'Saami',
   option2: 'Scots',
   option3: 'Inuit',
-  option: 'Islandic',
+  option4: 'Islandic',
   correct: 2
   }
-]
+];
 
 const questionQuiz = document.getElementById('question');
 console.log(questionQuiz);
-// converting HTML collection into array 
 const optionQuiz = Array.from(document.getElementsByClassName('option'));
 console.log(optionQuiz);
-const pointsifcorrect = 100;
-const numberOfQtn = 12;
 
-
-let questionsShown = {};
-let chosenAwr;
+let questionShown = {};
 let countQtn = 0; 
 let points = 0;
-let listOfQtn = [...allQtn]; 
-console.log(listOfQtn);
-let qtnIndex = 0; 
+let listOfQtn = [];
+let selectAwr;
 
-function startGame() {
-  // countQtn = 0;
-  // points = 0;
-  // listOfQtn = [...allQtn];
+
+const pointsIfCorrect = 100;
+const numberOfQtn = 12;
+
+// startGame = () => {
+function startGame () {
+  countQtn = 0; 
+  points = 0;
+  listOfQtn = [...allQtn];
   console.log(listOfQtn);
   nextQuestion();
-}
-
-startGame();
+};
 
 function nextQuestion () {
+  
   countQtn++;
-  // random question will be picked from the array of our question list
   const randomQtnInx = Math.floor(Math.random() * listOfQtn.length);
-  console.log(randomQtnInx);
-  // retrieve random questions from the list of questions
-  questionsShown = listOfQtn[randomQtnInx];
-  questionQuiz.innerText = questionsShown.question;
-}
+  questionShown = listOfQtn[randomQtnInx];
+  questionQuiz.innerText = questionShown.question;
 
-nextQuestion();
+  optionQuiz.forEach(function(option) {
+    const revealOption = option.dataset['value'];
+    // console.log(revealOption);
+    option.innerText = questionShown['option' + revealOption];
+  });
+
+};
 
 
+
+startGame();
