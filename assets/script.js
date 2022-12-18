@@ -138,6 +138,15 @@ function nextQuestion () {
   listOfQtn.splice(randomQtnInx, 1);
   selectAwr = true;
 };
-
+optionQuiz.forEach(function(option) {
+    option.addEventListener('click', function(e) {
+        if (!selectAwr) return;
+  
+        selectAwr = false;
+        const clickedOptionEl = e.target;
+        console.log(clickedOptionEl);
+        const clickedOptionInx = clickedOptionEl.dataset['value'];
+    });
+  });
 
 startGame();
