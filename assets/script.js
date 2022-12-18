@@ -146,7 +146,21 @@ optionQuiz.forEach(function(option) {
         const clickedOptionEl = e.target;
         console.log(clickedOptionEl);
         const clickedOptionInx = clickedOptionEl.dataset['value'];
+        let correctIncorrect= 'incorrect';
+        if (clickedOptionInx == questionShown.correct){
+          correctIncorrect = 'correct';
+        };
+        // console.log(clickedOptionInx == questionShown.correct);
+        // console.log(correctIncorrect);
+  
+        clickedOptionEl.classList.add(correctIncorrect);
+  
+        setTimeout(() => {
+          clickedOptionEl.classList.remove(correctIncorrect);
+          nextQuestion();
+        }, 2000);
     });
   });
+  
 
 startGame();
