@@ -123,7 +123,11 @@ function startGame () {
 };
 
 function nextQuestion () {
-  
+  if (listOfQtn.length === 0 || countQtn >= numberOfQtn) {
+    //go to the end page
+    return window.location.assign('/score.html');
+}
+
   countQtn++;
   const randomQtnInx = Math.floor(Math.random() * listOfQtn.length);
   questionShown = listOfQtn[randomQtnInx];
@@ -138,29 +142,38 @@ function nextQuestion () {
   listOfQtn.splice(randomQtnInx, 1);
   selectAwr = true;
 };
+
 optionQuiz.forEach(function(option) {
-    option.addEventListener('click', function(e) {
-        if (!selectAwr) return;
-  
-        selectAwr = false;
-        const clickedOptionEl = e.target;
-        console.log(clickedOptionEl);
-        const clickedOptionInx = clickedOptionEl.dataset['value'];
-        let correctIncorrect= 'incorrect';
-        if (clickedOptionInx == questionShown.correct){
-          correctIncorrect = 'correct';
-        };
-        // console.log(clickedOptionInx == questionShown.correct);
-        // console.log(correctIncorrect);
-  
-        clickedOptionEl.classList.add(correctIncorrect);
-  
-        setTimeout(() => {
-          clickedOptionEl.classList.remove(correctIncorrect);
-          nextQuestion();
-        }, 2000);
-    });
+  option.addEventListener('click', function(e) {
+      if (!selectAwr) return;
+
+      selectAwr = false;
+      const clickedOptionEl = e.target;
+      console.log(clickedOptionEl);
+      const clickedOptionInx = clickedOptionEl.dataset['value'];
+
+      let correctIncorrect= 'incorrect';
+      if (clickedOptionInx == questionShown.correct){
+        correctIncorrect = 'correct';
+      };
+      // console.log(clickedOptionInx == questionShown.correct);
+      // console.log(correctIncorrect);
+
+      clickedOptionEl.classList.add(correctIncorrect);
+
+      setTimeout(() => {
+        clickedOptionEl.classList.remove(correctIncorrect);
+        nextQuestion();
+      }, 2000);
   });
-  
+});
 
 startGame();
+
+
+
+
+
+
+
+
