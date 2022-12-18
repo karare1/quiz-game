@@ -135,8 +135,9 @@ function nextQuestion () {
     option.innerText = questionShown['option' + revealOption];
   });
 
+  listOfQtn.splice(randomQtnInx, 1);
+  selectAwr = true;
 };
-
 
 
 startGame();
