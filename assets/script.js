@@ -105,6 +105,7 @@ console.log(optionQuiz);
 const qtnCount = document.getElementById('qtn-count');
 const scoreCount = document.getElementById('score-count');
 
+
 let questionShown = {};
 let countQtn = 0; 
 let points = 0;
@@ -114,6 +115,13 @@ let selectAwr;
 
 const pointsIfCorrect = 100;
 const numberOfQtn = 12;
+
+
+// const timeCounter = document.getElementById('time-count');
+// let questionTimeCounter;
+// let timeValue = 15;
+
+
 
 // startGame = () => {
 function startGame () {
@@ -126,12 +134,14 @@ function startGame () {
 
 function nextQuestion () {
   if (listOfQtn.length === 0 || countQtn >= numberOfQtn) {
-    //go to the end page
-    return window.location.assign('/score.html');
-}
+    localStorage.setItem('totalResult', scoreCount.innerText);
+    //go to the result page
+    return window.location.assign('/result.html');
+};
 
   countQtn++;
   qtnCount.innerText = countQtn + '/' + numberOfQtn;
+  // quizTimeStart(timeValue);
   const randomQtnInx = Math.floor(Math.random() * listOfQtn.length);
   questionShown = listOfQtn[randomQtnInx];
   questionQuiz.innerText = questionShown.question;
@@ -164,28 +174,13 @@ optionQuiz.forEach(function(option) {
       if (clickedOptionInx == questionShown.incorrect) {
         
       };
-
+      
       function addScore() {
         if (clickedOptionInx == questionShown.correct) {
         scoreCount.innerText = (++points) * pointsIfCorrect;
       };
     };
       addScore();
-
-      
-      // console.log(clickedOptionInx == questionShown.correct);
-      // console.log(correctIncorrect);
-
-    //   let allOptions = answers.children.length;
-    //   for (let i = 0; i < allOptions; i++) {
-    //     if (answers.children[i].textContent == allQtn[countQtn].correct) {
-    //         answers.children[i].classList.add('correct');
-    //     };
-    // };
-      
-      console.log(questionShown.correct);
-
-
 
       setTimeout(function() {
         clickedOptionEl.classList.remove(correctIncorrect);
@@ -197,8 +192,34 @@ optionQuiz.forEach(function(option) {
 
 startGame();
 
+// function quizTimeStart(time)
+// {
+//     questionTimeCounter = setInterval(timeStart, 1000);
+//     function timeStart()
+//     {
+//         timeCounter.textContent = time;
+//         time--;
+//         if(time < 0)
+//         {
+//             clearInterval(questionTimeCounter);
+//             timeCounter.textContent = "00";
+//             next_question_btn.style.display = "block";
+//         };
+        // nextQuestion();
+//       }
+//     }
+// quizTimeStart();
+      // console.log(clickedOptionInx == questionShown.correct);
+      // console.log(correctIncorrect);
 
-
+    //   let allOptions = answers.children.length;
+    //   for (let i = 0; i < allOptions; i++) {
+    //     if (answers.children[i].textContent == allQtn[countQtn].correct) {
+    //         answers.children[i].classList.add('correct');
+    //     };
+    // };
+      
+      // console.log(questionShown.correct);
 
 
 
