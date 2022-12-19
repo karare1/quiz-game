@@ -309,7 +309,7 @@ body {
     text-align: center;
     font-size: 3rem;
   }
-  #save {
+  #save-btn {
     font-size: 1rem;
     border-radius: 7%;
     padding: 0.7% 4%;
@@ -325,7 +325,7 @@ body {
     font-size: 1.3rem;
   }
 
-  #user {
+  #username {
     padding: 1% 3%;
     text-align: center;
   }
