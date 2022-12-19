@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
+    <script src="https://kit.fontawesome.com/48983e326e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <div class="container-div">
-    <h1>Thank you for taking this quiz!</h1>
-    <h2>Your result: </h2>
-    <p id='result'>0</p>
-</div>
+    <h1 class="h-result">Thank you for taking this quiz!</h1>
+    <h2 class="h-result" >Your result: </h2>
+    <p id='p-result'>0</p>
+    <form>
+        <div id="label-result">
+        <label for="username"></label>To save your score please enter your name:
+        </div>
+        <div id='user-result'>
+        <input id='user' type="text" id="username" name="username" placeholder="username" minlength="3">
+        </div>
+    
+        <div id="save-div">
+        <input id='save' type="submit" value="Save">
+        </div>
+        <div id='buttons-result'>
+        <button id="btn1-result"><a href="index.html">Go Home</a></button>
+        <button id="btn2-result"><a href="game.html">Play Again</a></button>
+        </div>
+        <footer>
+            <p class="copyright">karare <i class="fa-solid fa-paw"></i> 2022 </p>
+        </footer>
+        </div>
+
 </body>
 </html>
