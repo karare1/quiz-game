@@ -40,6 +40,10 @@
         // disable save button if no input in username
         const name = document.getElementById('username');
         const saveBtn = document.getElementById('save-btn');
+        const totalResult = localStorage.getItem('totalResult');
+        const sumPoints = document.getElementById('p-result');
+        sumPoints.innerText = totalResult;
+    
         name.addEventListener('keyup', function() {
             // console.log(name.value);
             saveBtn.disabled = !name.value;
@@ -50,7 +54,6 @@
         //  console.log('today');
          event.preventDefault();
         };
-
         </script>  
 
 </body>
