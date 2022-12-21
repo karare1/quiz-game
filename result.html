@@ -13,18 +13,30 @@
     <h1 class="h-result">Thank you for taking this quiz!</h1>
     <h2 class="h-result" >Your result: </h2>
     <p id='p-result'></p>
-    <form>
+    <form id="myForm">
         <div id="label-result">
         <label for="username"></label>To save your score please enter your name:
         </div>
         <div id='user-result'>
-        <input type="text" id="username" name="username" placeholder="username" minlength="3">
+        <input type="text" oninput="this.value=this.value.replace(/[^a-z]/gi,'')" id="username" name="username" placeholder="username" minlength="3" required>  
+        
+        <button id="info"><i class="fa-solid fa-house"></i></button>
+        <div id="my-info" class="modal">
+        <div class="info-content">
+        <span class="close">&times;</span>
+        <p>only letters are accepted</p>
         </div>
-    
+  
+  </div>
+    </div>
+
         <div id="save-div">
-        <input id='save-btn' type="submit" value="Save" disabled>
-        </div>
+        <input id='save-btn' type="submit" value="Save">
+        
+        </div>      
     </form>
+
+    
 
         <div id='buttons-result'>
         <button id="btn1-result"><a href="index.html">Go Home</a></button>
@@ -36,27 +48,126 @@
         </footer>
         </div>
 
+       
+        
         <script>
-        // disable save button if no input in username
+
+// Get the modal
+var info = document.getElementById("my-info");
+
+// Get the button that opens the modal
+var btn = document.getElementById("info");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  info.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  info.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == info) {
+    info.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+
         const name = document.getElementById('username');
         const saveBtn = document.getElementById('save-btn');
-        const totalResult = localStorage.getItem('totalResult');
         const sumPoints = document.getElementById('p-result');
-        sumPoints.innerText = totalResult;
+        const totalResult = localStorage.getItem('totalResult');
     
-        name.addEventListener('keyup', function() {
-            // console.log(name.value);
-            saveBtn.disabled = !name.value;
-        });
+        // an array of highscores 
+        const topScore = JSON.parse(localStorage.getItem('topScore')) || [];
+         // console.log(topScore);
 
-        document.getElementById('save-btn').addEventListener('click', saveScore);
+        // const highestplayer = 5;
+        sumPoints.innerText = totalResult;
+
+        // name.addEventListener('keyup', function() {
+        //     // console.log(name.value);
+        //     saveBtn.disabled = !name.value;
+        // });
+
         function saveScore(event) {
-        //  console.log('today');
+        //  console.log('happy monday');
          event.preventDefault();
-        };
+
+        const result = {
+            pointsGet: totalResult,
+            userName: name.value,
+        }
+        // console.log(result);
+
+        topScore.push(result);
+        topScore.sort((a, b) => b.pointsGet - a.pointsGet);
+        topScore.splice(5);
+
+        localStorage.setItem('topScore', JSON.stringify(topScore));
+         window.location.assign('/');
+    };
+
+        // saveBtn.addEventListener('click', saveScore);
+        let saveResult = document.forms[0];
+        saveResult.addEventListener('submit', saveScore);
+
         </script>  
 
 </body>
 </html>
+ <!-- // disable save button if no input in username
+        // const name = document.getElementById('username');
+        // const saveBtn = document.getElementById('save-btn');
+        // const totalResult = localStorage.getItem('totalResult');
+        // const sumPoints = document.getElementById('p-result');
+        // sumPoints.innerText = totalResult;
 
+        // let saveResult = document.forms[0];
+        // saveResult.addEventListener('submit', saveScore);
+
+        // const topScore = JSON.parse(localStorage.getItem('topScore')) || [];
+        // console.log(topScore);
+        // sumPoints.innerText = totalResult;
+
+        // name.addEventListener('keyup', function() {
+        //     // console.log(name.value);
+        //     saveBtn.disabled = !name.value;
+        // });
+
+        // document.getElementById('save-btn').addEventListener('click', saveScore);
+        // function saveScore(event) {
+        //  console.log('today');
+        //  event.preventDefault();
+        // };
+
+        
+        // console.log(topScore);
+        // const result = {
+        //     pointsGet: totalResult,
+        //     userName: name.value,
+        // }
+        // console.log(result);
+
+        // topScore.push(result);
+        // console.log(topScore);
+
+        // console.log(JSON.parse(localStorage.getItem('topScore')));
+
+
+        // const topScore = JSON.parse(localStorage.getItem('topScore', []))
+        // console.log(topScore); -->
 
