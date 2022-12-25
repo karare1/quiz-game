@@ -11,13 +11,14 @@
 <body>
     <div class="container-div">
         <header>
+        <div id="nav-bar-index">
+        </div>
             <h1 id="h1-quiz">COOL Quizz</h1>
-            <!-- <h2 id="h2-quiz">Quizz</h2> -->
         </header>
 
         <section>
             <p id="par-start">Show how cool is your knowledge!</p>
-
+            <div id="all-btn">
             <div id="about-div">
                 <button id="about-btn" class="btn-main">ABOUT</button>
             </div>
@@ -27,21 +28,15 @@
                   <span id="close-box">&times;</span>
 
                   <div id ='text-div'>
-                    <h3>Do you think you know everything about winter?</h3>
-                    <h4>Then it's time to test yourself!</h4>
-                    <p>Whether you love it or hate it, winter is one of those magical times of the year.
-                        <i class="fa-solid fa-snowflake"></i>
-                    </p>
-                    <p>When you can wrap up warm with a hot chocolate and cuddle up with someone, 
-                        or when everything glistens in the snow, that's what winter is all about.
-                        <i class="fa-solid fa-temperature-low"></i>
-                    </p>
-                    <p>Grab yourself a nice cuppa coffee, a choccy biscuit and enjoy this winter quiz.
+                    <h3 class="pop-main-text">Do you think you know everything about winter?</h3>
+                    <h4 class="pop-main-text">Then it's time to test yourself!</h4>
+                    <p>Grab a nice cuppa coffee, a choccy biscuit and enjoy this winter quiz.
                         <i class="fa-solid fa-mug-hot"></i></p>
                     </p>  
-                  </div>
-
+                    
+                    <p class="pop-main-text pop-p">Let's Play!</p>
                 </div>
+            </div>
             </div>
               
 
@@ -51,10 +46,12 @@
             <div id="highscore-btn-div">
                 <button id="highscore-btn" class="btn-main"><a id="link-to-highscore" href="highscore.html">HIGH SCORE</a></button>
             </div>
+            </div>
         </section>        
         <footer>
             <p class="copyright">karare <i class="fa-solid fa-paw"></i> 2022 </p>
         </footer>
+        <!-- <a href="result.html">Go Home</a> -->
     </div>
 <script>
 let popUp = document.getElementById("pop-up");
