@@ -23,25 +23,15 @@ body {
     margin: 7% 19%;
 }
 
-.container-div a {
-  text-decoration: none;
-  color: black;
-}
-
-
 #nav-bar-index {
   height: 3rem;
   background-color:rgb(114, 23, 150);
 }
 
 #h1-quiz {
-    text-align: center;
-    font-size: 2rem;
-    margin: 3% auto;
-}
-
-#h2-quiz {
-    text-align: center;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3% auto;
 }
 
 #par-start {
@@ -60,45 +50,128 @@ body {
   align-items: center;
 }
 
-#start-btn-div {
+/* #about-div {
+  text-align: center;
+  margin: 3% 0;
+} */
+
+/* #about-btn {
+  padding: 1% 13%; 
+  background-color: silver;
+  font-size: 1rem;
+  font-weight: 900;
+} */
+
+.btn-main {
+  width: 20rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+ }
+
+ #pop-up {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 5%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#pop-up-box {
+  margin: auto;
+  padding: 1%;
+  border: 1px solid #888;
+  width: 60%;
+  font-size: 1.3rem;
+  background-color: silver;
+  
+}
+
+#close-box {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close-box:hover,
+#close-box:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#text-div {
+  /* margin: 8%; */
+  padding: 1.5%;
+}
+
+.pop-main-text {
+  text-align: center;
+  margin-bottom: 3%;
+  color:rgb(24, 100, 151);
+}
+
+#pop-up-box p {
+  margin-bottom: 1%;
+}
+
+.pop-p {
+  font-weight: 700;
+  margin-top: 2%;
+
+}
+
+.fa-snowflake {
+  color:rgb(24, 100, 151);
+  padding-right: 2%;
+}
+
+.fa-mug-hot {
+  margin-left: 1%;
+  color:rgb(24, 100, 151);
+}
+
+#ul-rules {
+  list-style-type:none;
+  }
+  
+  #start-btn-div {
     margin: 3% 0;
 }
 
-#highscore-btn-div {
-    /* text-align: center;
-    margin: 3% 0; */
-}
-
-#about-div {
-    /* text-align: center;
-    margin: 3% 0; */
-}
-
-#about-btn {
-    /* padding: 1% 13%; 
-    background-color: silver;
-    font-size: 1rem;
-    font-weight: 900; */
+.container-div a {
+  text-decoration: none;
+  color: black;
 }
 
 #start-btn {
-    background-color:rgb(114, 23, 150);
-    /* padding: 1% 10%; 
-    background-color: chartreuse;
-    background-color:rgb(114, 23, 150); */
-
+  background-color:rgb(114, 23, 150);
+  /* padding: 1% 10%; 
+  background-color: chartreuse;
+  background-color:rgb(114, 23, 150); */
 }
 
 #link-to-quizz {
-    /* text-decoration: none;
-    color:white;
-    font-weight: 600;
-    font-size: 1.5rem; */
-    width: 20rem;
-    display: block;
-    color: white;
-
+  /* text-decoration: none;
+  color:white;
+  font-weight: 600;
+  font-size: 1.5rem; */
+  width: 20rem;
+  display: block;
+  color: white;
 }
+
+/* #highscore-btn-div {
+    text-align: center;
+    margin: 3% 0;
+} */
 
 #highscore-btn {
     /* padding: 1% 10%; 
@@ -115,36 +188,59 @@ body {
     display: block;
 }
 
-.btn-main {
- width: 20rem;
- cursor: pointer;
- font-size: 1.2rem;
- height: 2.5rem;
-};
-
-.btn-main[disabled]:hover {
+/* .btn-main[disabled]:hover {
     cursor: not-allowed;
-}
+} */
 
 .copyright {
     text-align: center;
     margin-top: 7%;
     margin-bottom: 1%;
 }
-#ul-rules {
-list-style-type:none;
+
+/*___________________________ max 700px */
+
+@media screen and (max-width: 700px){
+
+  .container-div {
+    width: 92%;
+    margin: 5% 4%;
+}
+.btn-main {
+  width: 14rem;
+ }
+ #link-to-quizz {
+  width: 14rem;
+}
+#link-to-highscore {
+  width: 14rem;
+}
+.copyright {
+  margin-top: 12%;
 }
 
-.fa-snowflake {
-  color:rgb(24, 100, 151);
-  padding-right: 2%;
+#pop-up-box {
+  width: 80%;
+  font-size: initial;
 }
 
-.pop-p {
-  font-weight: 700;
-  margin-top: 2%;
+#text-div {
+  padding: 0.5%;
+}
 
 }
+
+@media screen and (max-width: 900px){
+  #pop-up-box {
+    width: 80%;
+    font-size: initial;
+  }
+
+}
+
+
+
+
 
 
 /* ------------------------------------game.html--------------------------------------------------- */
@@ -268,73 +364,26 @@ list-style-type:none;
 }
 
 
-#pop-up {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 5%; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  }
 
 
-#pop-up-box {
-    margin: auto;
-    padding: 1%;
-    border: 1px solid #888;
-    width: 60%;
-    font-size: 1.3rem;
-    background-color: silver;
-    
-  }
 
-  #close-box {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+
   
-  #close-box:hover,
-  #close-box:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+
   
-  .pop-main-text {
-    text-align: center;
-    margin-bottom: 3%;
-    color:rgb(24, 100, 151);
-  }
 
-  #pop-up-box p {
-    margin-bottom: 1%;
-  }
 
-  #text-div {
-    /* margin: 8%; */
-    padding: 1.5%;
-  }
 
   .fa-snowflake {
     color:rgb(24, 100, 151);
   }
 
-  .fa-temperature-low {
+  /* .fa-temperature-low {
     margin-left: 1%;
     color:rgb(24, 100, 151);
-  }
+  } */
 
-  .fa-mug-hot {
-    margin-left: 1%;
-    color:rgb(24, 100, 151);
-  }
+  
 
   #next-btn-div {
     text-align: right;
