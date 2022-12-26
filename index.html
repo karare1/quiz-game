@@ -40,7 +40,7 @@
                             <li><span><i class="fa-solid fa-snowflake"></i></span>If you run out of time, you will be forwarded back to the home page to start the quiz again</li>
                             <li><span><i class="fa-solid fa-snowflake"></i></span>You'll get 100 points for each correct answer</li>
                             <li><span><i class="fa-solid fa-snowflake"></i></span>At the end of the quiz you can save your score</li>
-                            <li><span><i class="fa-solid fa-snowflake"></i></span>Only 10 highest results will be displayed on the High Score page</li>
+                            <li><span><i class="fa-solid fa-snowflake"></i></span>Only 10 highest results will be displayed on the High Score board</li>
                         </ul>
                         <p class="pop-main-text pop-p">Let's Play!</p>
                     </div>
@@ -62,31 +62,6 @@
     </footer>
         <!-- <a href="result.html">Go Home</a> -->
     </div>
-<script>
-let popUp = document.getElementById("pop-up");
-console.log(popUp);
-let btnAbout = document.getElementById("about-btn");
-console.log(btnAbout);
-let  closeBox = document.getElementById("close-box");
-
-window.onload;
-// clicking on About button will populate pop-up window
-btnAbout.onclick = function() {
- popUp.style.display = "block";
-}
-// clicking on x will close the pop-up window
-closeBox.onclick = function() {
-  popUp.style.display = "none";
-}
-
-// clicking anywhere outside of the pop-up window will close it
-window.onclick = function(event) {
-  if (event.target == popUp) {
-    popUp.style.display = "none";
-  }
-}
-</script>
-
-<!-- <script src="/assets/script.js" type="text/javascript"></script> -->
+<script src="/assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
