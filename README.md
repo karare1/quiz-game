@@ -3,7 +3,7 @@
 
 The COOL Quiz was created for anyone who wants to test their knowledge or learns some new interesting facts about the winter season. The player can take the quiz yourself or it can be used as a family indoor activity for those cold and dark evenings.
 The quiz has 12 multiple choice questions with a 120-second timer and a High Score page so the player can save their best score.
-It hopes to engage all age groups or individuals of various interests not just a 'winter people'. 
+It hopes to engage all age groups or individuals of various interests not just a 'winter fans'. 
 
 ![Responsive Design](media/responsive.png)
 
@@ -20,20 +20,46 @@ It hopes to engage all age groups or individuals of various interests not just a
 
 ## Features 
 
-There are three webpages on the White Lines website: 
+
+Cool Quiz consists of four webpages that all have an intuitive design for easy navigation.
 
   - ### Home Page
-  This page provides an introduction and basic information about the academy. 
-  - ### Gallery
-  It displays pictures of the academy and the sporting environment to attract tennis enthusiasts and potential customers. 
-  - ### Sign up 
-  The purpose of this page is to encourage people interested in taking up tennis lessons to sign up to receive more information and a personalised lesson plan.  
+  This page gives an introduction to the quiz and important links to the game itself and to the top score page.  
+  - ### Game Page
+  This is the core page of the quiz, it displays questions and answers-options as well as a navigation bar to see progress of the game.
+  - ### Result Page
+  It shows the result of the quiz and includes the possiblity for the player to save their score. 
+  - ### High Score Page
+  It displays a list of 7 best scores.
 
 
 ### Existing Features
 
-- __Header__
-  - White Lines Academy's logo and navigation bar are featured in the header.
+- __Home Page__
+- The home page is the screen the end user is presented with on page load.
+- All four webpages have the same winter themed background image and colors with silver background for the website content. 
+  The aim is to create a wintery atmoshere for players and bring back some memories of exciting winter events and activites.   
+  - _Header_
+    - Header has the same color design as other pages to support intuitivness of the entire website and the name of the quiz to give   
+      a visitor a hit what the quiz is about. This intuitive layout enhances the user experience and make the website easy to use. 
+  - _Body_
+    - Body includes an encouraging message to challenge the visitor to click on the START button and play the game. 
+    - The skeleton of the body has three buttons:  
+      - ABOUT button - clicking on the ABOUT button will display a pop-up box with the game rules. It includes all information the player needs to know before they start the game.
+      - START button is placed in the middle and have a different colour to underlay its importance. Clicking on this button will redirect the player to the game page where they can start the quiz. 
+      - TOP SCORE button will forward the visitor to the list of 7 best results. 
+    - Overall the body layout is simple and easy to understand and navigate the user. 
+  - _Footer_
+    - Similarly to the header, the footer remains the same regardless of the webpage. 
+      It contains a name of the game production company and a year of game creation.
+      This intuitive layout contributes to the users experience.
+
+
+
+
+
+
+
   - A logo links a user to the home page when clicked.
   - Navigation bar includes links to Home page, Gallery and Sign Up page. It is identical, positioned 
     at the top of each page, for easy navigation. 
