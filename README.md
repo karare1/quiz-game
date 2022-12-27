@@ -14,8 +14,19 @@ It hopes to engage all age groups or individuals of various interests not just a
 - As a user, I would like to play the quiz and see content clearly on any device.
 - As a user, I would like to be able to easily navigate through the website to complete the quiz.
 - As a user, I would like to see if the answer I have chosen is correct or incorrect before proceeding to the next question.
-- As a user, I would like to see my progress during the quiz (to see question counter, time counter and the current score).
+- As a user, I would like to see my progress during the quiz (to see question counter, time counter and Score counter).
 - As a user, I would like to see my final score, have an option to save my best score and play again.
+
+Implementation: 
+- Used the layout with a winter background image, winter colours as well as an appropriate title of the quiz and its initial message 
+  to give users an early sense of what the quiz is about.
+- Created pop-up window to introduce the game and present a user with the quiz rules.
+- Made the quiz responsive, visible and esy to read on desktops, laptops, tablets and smartphones.
+- Created a simple intuitive design for easy navigation and using links for a smooth transport between pages
+- Made the quiz interactive by changing a chosen answer-option green if correct and red if incorrect. 
+- Added Question counter, Time counter and Score counter to the game page.
+- Added a result page that display the quiz result as well as option to save the users' score.
+
 
 
 ## Features 
@@ -29,7 +40,7 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
   This is the core page of the quiz, it displays questions and answers-options as well as a navigation bar to see progress of the game.
   - ### Result Page
   It shows the result of the quiz and includes the possiblity for the player to save their score. 
-  - ### High Score Page
+  - ### Top Score Page
   It displays a list of 7 best scores.
 
 
@@ -62,6 +73,7 @@ __Game Page__
 - _Header_
     - Header includes the navigation bar which consists of the link to a home page and other three elements to monitor the progress of 
       the quiz. The player can click on the home icon anytime during the game to take them back to the home page a start the game again. Placing the home icon on this page allows users easily navigate between pages and to return to the home page if they wish without having to use the back button.
+      The progress elements are all dynamic and update with each question asked.
       Elements to monitor the progress:
        - Question counter shows a player how many questions have been answered so far as well as the total number of questions. 
        - Time counter shows how many seconds are still left to complete the quiz. It is 120 seconds countdown timer and if a player 
@@ -71,9 +83,9 @@ __Game Page__
       Ability to monitor the progress during the quiz enhance the user experience and their motivation to achieve the highest score. 
 - _Body_  
     - Body shows a current question with four answers-options. Clicking on the one of these four options will deactivate the rest 
-      three options and reveal if the chosen option is correct or not. The player will then be forwarded to the next question. Once a player clicked on an option it cannot be changed. It will enhance the fluidity and energy of the game and encourage a player to complete the quiz on time. 
-      Time counter will prompt the user to answer questions correctly but also within a short period of time. It means double challenge and it makes the game more intresting and appealing for users.
-      If a player ran out of time, they need to start from the beginning to complete the quiz which encourgage users to take the quiz again. Also, if a player answers the question incorrectly, the correct answer will not be revealed which makes the game more attactive for users if they want to play again a improve their score. 
+      three options and reveal if the chosen option is correct or not. The player will then be forwarded to the next question. Once a player clicked on an option it cannot be rechanged. This will enhance the fluidity and energy of the game and encourage a player to complete the quiz on time. 
+      Time counter will prompt the user to answer questions correctly but also within a short period of time. It means double challenge and it makes the game more intresting and appealing to users.
+      If the user does not answer all 12 questions in the allocated time the quiz will automatically finish and they will be taken back to the home page. This will encourage users to take the quiz again. Also, if a player answers the question incorrectly, the correct answer will not be revealed which makes the game more attactive encourage a user to play again and improve their score. 
       Once all questions have been answered, a player is automaticly directed to the result page. 
 - _Footer_ (please see the section about Footer above)   
     <br><br>
@@ -81,101 +93,29 @@ __Game Page__
       <img src="media/nav-bar.png">
     </p>    
 
+__Result Page__
+  - It shows how many points a player scored in a quiz and the option to save the score. 
+    For saving the score a player has to insert a usename that can contain only alphabeths without any numbers, special characters or spaces. 
+  - If the username meet the criteria, clicking on the SAVE button will save the player's score and return a player to the home page. 
+    If the user does not want to save their score they have an option to click on Go Home button to take them to the home page or Play Again button to get to the game page and start playing again. 
+  <br><br>
+  <p align="center">
+    <img src="media/nav-bar.png">
+  </p>    
 
-
-
-  
-
-- __About Academy__
-  - The About Academy section presents the academy to the website visitor. It contains general
-    information on who the academy is for, where the prospective customer can find the place and main objectives of the academy.
+__Top Score Page__
+  - This page displays a list of the 7 best scores. 
+    It also have the home icon for better navigation and it takes a user back to the home page.
     <br><br>
     <p align="center">
-      <img src="media/about-academy.png">
-    </p>
-
-- __Offer section__
-  - The offer section is an important part of the site. It shows what White Lines provide to tennis buffs and what 
-    makes them better than their competitors. It is a selling part of the website and its goal is to convince prospective clients to register for courses by presenting the academy as a professional venue that has much to offer.
-    <br><br>
-    <p align="center">
-      <img src="media/offer-section.png">
-    </p>
-    <br>
-
-- __Tennis Programmes__ 
-  - This section presents the tennis courses of the academy. It gives users an early sense of who are
-    the programmes for and what they focuse on. It provides the user with the opportunity to specify which program is most suitable for them. Each program box has a 'Learn More' button that is supposed to bring visitors to the website where they can get more specific information about that particular program.
-  - Below the tennis programs is the JOIN US TODAY button to encourage the user to purchase a tennis
-    class. This link will bring the user to the Sign Up page to register for the Academy.
-    <br><br>
-    <p align="center">
-      <img src="media/tennis-programmes.png">
-    </p>
-    <br>
-
-- __Testimonials__
-  - The most important part of the website. The reason for this is testimonials give potential
-    customers that one final push to sign up for the service. They are the most effective type of content to put on a website to get more sales.
-  - The testimonials have been specifically designed to show the good side of the academy by saying 
-    positive things on the tennis place, lessons and coaches. Great feedback from current or former customers will reassure those browsing the website that this is a great place to learn tennis skills.
-    <br><br>
-    <p align="center">
-      <img src="media/testimonials.png">
-    </p>
-    <br>
-
-- __Contact Details__
-  - Contact Information Section - here users can find information about location, opening hours, e-mail
-    address and telephone number. Contact details are easy to find; they are well structured and have a background colour to emphasize the importance of the section.
-    <br><br>
-    <p align="center">
-      <img src="media/contact.png">
-    </p>
-    <br>
-
-- __The Footer__
-  - The footer area contains links to White Lines' social media sites. Links are opened in a new tab to
-    make it easier to navigate. Social media integration gives users more ways to engage and interact with the academy. 
-    They also create more opportunities to promote the service of the academy and build a larger customer base.
-    Social media links are valuable for the user because they can obtain up-to-date information on academy activities, special events or various tennis practices.
-  - Footer also includes links to major tennis slams. It allows tennis enthusiasts to follow the world's
-    top tennis players and enhance their motivation.
-    Similarly to the header, the footer remains the same regardless of the webpage a visitor browses. 
-    This intuitive layout contributes to the users experience.
-    <br><br>
-    <p align="center">
-      <img src="media/footer.png">
-    </p>
-    <br>
-
-- __Gallery__
-    - The gallery provides the user with supportive images of what life in the academy looks like. This section is
-      designed to capture the attention of visitors and improve the user experience of the website. This section is valuable to users because they can identify the tennis experience they can gain and learn more about the tennis venue and its atmosphere.
-    <br><br>
-    <p align="center">
-      <img src="media/gallery.png">
-    </p>
-    <br>
-
-- __The Sign Up Page__
-  - This page will allow the user to get signed up to White Lines to begin their tennis journey. The user will 
-    be able to create a White Lines Tennis academy account and specify the programme in which they are interested. The user will also be prompted to submit their full name, e-mail address and phone number.
-    <br><br>
-    <p align="center">
-      <img src="media/form.png">
-    </p>
-    <br>
+      <img src="media/nav-bar.png">
+    </p>    
 
 ### Features Left to Implement
 
-  - Create additional pages for each program in order to provide the visitors with additional information, 
-    i.e. what the program consists of, the description of extra activities, schedules and prices.
-    When the user clicks on 'Learn More' button in the programme block they will be taken to the specific page.
-
-  - Another idea is to create an academy news page that will be updated regularly with special events,
-    activities, student achievements and other interesting ideas.
-
+  - get questions from API open database to offer users a greater variety of questions and to make the quiz more attractive 
+  - I would like to incorporate difficulty levels (easy, medium, hard)
+  - add audio effects to a quiz question
 
 ### Wireframes 
 - [Home Desktop](wireframes/home-desktop.png)
@@ -188,6 +128,16 @@ __Game Page__
 - [Sign Up Tablet](wireframes/sign-up-tablet.png)
 - [Sign Up Mobile](wireframes/sign-up-mobile.png)
   
+
+
+
+
+
+
+
+
+
+
 
 ## Testing 
 
@@ -333,6 +283,12 @@ Also made use of:
 
 
 
+
+
+
+
+
+
 The website White Lines was developed with the goal of attracting people of all ages and tennis abilities in the Penarth and Cardiff areas to pick up a tennis racquet and join our academy. 
 It hopes to engage parents to enroll their children in tennis lessons as well as adults who are just thinking of starting to play tennis as complete beginners or those who are looking for ways to improve their game.
 
@@ -372,5 +328,86 @@ This website will be helpful to aspiring tennis players in order to find out all
     <br><br>
     <p align="center">
       <img src="media/landing-video.png">
+    </p>
+    <br>
+
+- __About Academy__
+  - The About Academy section presents the academy to the website visitor. It contains general
+    information on who the academy is for, where the prospective customer can find the place and main objectives of the academy.
+    <br><br>
+    <p align="center">
+      <img src="media/about-academy.png">
+    </p>
+
+- __Offer section__
+  - The offer section is an important part of the site. It shows what White Lines provide to tennis buffs and what 
+    makes them better than their competitors. It is a selling part of the website and its goal is to convince prospective clients to register for courses by presenting the academy as a professional venue that has much to offer.
+    <br><br>
+    <p align="center">
+      <img src="media/offer-section.png">
+    </p>
+    <br>
+
+- __Tennis Programmes__ 
+  - This section presents the tennis courses of the academy. It gives users an early sense of who are
+    the programmes for and what they focuse on. It provides the user with the opportunity to specify which program is most suitable for them. Each program box has a 'Learn More' button that is supposed to bring visitors to the website where they can get more specific information about that particular program.
+  - Below the tennis programs is the JOIN US TODAY button to encourage the user to purchase a tennis
+    class. This link will bring the user to the Sign Up page to register for the Academy.
+    <br><br>
+    <p align="center">
+      <img src="media/tennis-programmes.png">
+    </p>
+    <br>
+
+- __Testimonials__
+  - The most important part of the website. The reason for this is testimonials give potential
+    customers that one final push to sign up for the service. They are the most effective type of content to put on a website to get more sales.
+  - The testimonials have been specifically designed to show the good side of the academy by saying 
+    positive things on the tennis place, lessons and coaches. Great feedback from current or former customers will reassure those browsing the website that this is a great place to learn tennis skills.
+    <br><br>
+    <p align="center">
+      <img src="media/testimonials.png">
+    </p>
+    <br>
+
+- __Contact Details__
+  - Contact Information Section - here users can find information about location, opening hours, e-mail
+    address and telephone number. Contact details are easy to find; they are well structured and have a background colour to emphasize the importance of the section.
+    <br><br>
+    <p align="center">
+      <img src="media/contact.png">
+    </p>
+    <br>
+
+- __The Footer__
+  - The footer area contains links to White Lines' social media sites. Links are opened in a new tab to
+    make it easier to navigate. Social media integration gives users more ways to engage and interact with the academy. 
+    They also create more opportunities to promote the service of the academy and build a larger customer base.
+    Social media links are valuable for the user because they can obtain up-to-date information on academy activities, special events or various tennis practices.
+  - Footer also includes links to major tennis slams. It allows tennis enthusiasts to follow the world's
+    top tennis players and enhance their motivation.
+    Similarly to the header, the footer remains the same regardless of the webpage a visitor browses. 
+    This intuitive layout contributes to the users experience.
+    <br><br>
+    <p align="center">
+      <img src="media/footer.png">
+    </p>
+    <br>
+
+- __Gallery__
+    - The gallery provides the user with supportive images of what life in the academy looks like. This section is
+      designed to capture the attention of visitors and improve the user experience of the website. This section is valuable to users because they can identify the tennis experience they can gain and learn more about the tennis venue and its atmosphere.
+    <br><br>
+    <p align="center">
+      <img src="media/gallery.png">
+    </p>
+    <br>
+
+- __The Sign Up Page__
+  - This page will allow the user to get signed up to White Lines to begin their tennis journey. The user will 
+    be able to create a White Lines Tennis academy account and specify the programme in which they are interested. The user will also be prompted to submit their full name, e-mail address and phone number.
+    <br><br>
+    <p align="center">
+      <img src="media/form.png">
     </p>
     <br>
