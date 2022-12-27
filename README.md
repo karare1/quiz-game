@@ -51,37 +51,40 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
     - Overall the body layout is simple and easy to understand and navigate the user. 
   - _Footer_
     - Similarly to the header, the footer remains the same regardless of the webpage. 
-      It contains a name of the game production company and a year of game creation.
+      It contains a name of the production company and a year of production.
       This intuitive layout contributes to the users experience.
-
-
-
-
-
-
-
-  - A logo links a user to the home page when clicked.
-  - Navigation bar includes links to Home page, Gallery and Sign Up page. It is identical, positioned 
-    at the top of each page, for easy navigation. 
-    This intuitive layout enhances the user experience and gives users access to the information they want as quickly as possible.
-    Placing the navigation bar at the top of each page allows users to navigate from page to page 
-    without having to use the back button if they wish to return to the previous page.
     <br><br>
     <p align="center">
       <img src="media/nav-bar.png">
     </p>
 
-- __The landing video__
-  - The landing includes a video from the tennis academy showing the site's tennis courts from a 
-    bird's-eye perspective. 
-    The purpose of this section is to capture the attention of users and let them discover the atmosphere of the place.
-  - The overlay contains a welcome message with an encouraging slogan to appeal to the user and create a
-     positive user experience.
+__Game Page__
+- _Header_
+    - Header includes the navigation bar which consists of the link to a home page and other three elements to monitor the progress of 
+      the quiz. The player can click on the home icon anytime during the game to take them back to the home page a start the game again. Placing the home icon on this page allows users easily navigate between pages and to return to the home page if they wish without having to use the back button.
+      Elements to monitor the progress:
+       - Question counter shows a player how many questions have been answered so far as well as the total number of questions. 
+       - Time counter shows how many seconds are still left to complete the quiz. It is 120 seconds countdown timer and if a player 
+         runs out of time before completing the quiz they will be redirected back to to home page to have another go. 
+       - Score counter shows how many points a player has being received if answered a question correctly. For each correct answer a 
+         player can get 100 points (1200 points maximum).
+      Ability to monitor the progress during the quiz enhance the user experience and their motivation to achieve the highest score. 
+- _Body_  
+    - Body shows a current question with four answers-options. Clicking on the one of these four options will deactivate the rest 
+      three options and reveal if the chosen option is correct or not. The player will then be forwarded to the next question. Once a player clicked on an option it cannot be changed. It will enhance the fluidity and energy of the game and encourage a player to complete the quiz on time. 
+      Time counter will prompt the user to answer questions correctly but also within a short period of time. It means double challenge and it makes the game more intresting and appealing for users.
+      If a player ran out of time, they need to start from the beginning to complete the quiz which encourgage users to take the quiz again. Also, if a player answers the question incorrectly, the correct answer will not be revealed which makes the game more attactive for users if they want to play again a improve their score. 
+      Once all questions have been answered, a player is automaticly directed to the result page. 
+- _Footer_ (please see the section about Footer above)   
     <br><br>
     <p align="center">
-      <img src="media/landing-video.png">
-    </p>
-    <br>
+      <img src="media/nav-bar.png">
+    </p>    
+
+
+
+
+  
 
 - __About Academy__
   - The About Academy section presents the academy to the website visitor. It contains general
@@ -336,3 +339,38 @@ It hopes to engage parents to enroll their children in tennis lessons as well as
 This website will be helpful to aspiring tennis players in order to find out all the information on the academy: what the White Lines has to offer, what its culture is like, what tennis programmes are offered, and why they should sign up.
 
 ![Responsive Design](media/responsive.png)
+
+
+ - A logo links a user to the home page when clicked.
+  - Navigation bar includes links to Home page, Gallery and Sign Up page. It is identical, positioned 
+    at the top of each page, for easy navigation. 
+    This intuitive layout enhances the user experience and gives users access to the information they want as quickly as possible.
+    Placing the navigation bar at the top of each page allows users to navigate from page to page 
+    without having to use the back button if they wish to return to the previous page.
+    <br><br>
+    <p align="center">
+      <img src="media/nav-bar.png">
+    </p>
+
+    - A logo links a user to the home page when clicked.
+  - Navigation bar includes links to Home page, Gallery and Sign Up page. It is identical, positioned 
+    at the top of each page, for easy navigation. 
+    This intuitive layout enhances the user experience and gives users access to the information they want as quickly as possible.
+    Placing the navigation bar at the top of each page allows users to navigate from page to page 
+    without having to use the back button if they wish to return to the previous page.
+    <br><br>
+    <p align="center">
+      <img src="media/nav-bar.png">
+    </p>
+
+- __The landing video__
+  - The landing includes a video from the tennis academy showing the site's tennis courts from a 
+    bird's-eye perspective. 
+    The purpose of this section is to capture the attention of users and let them discover the atmosphere of the place.
+  - The overlay contains a welcome message with an encouraging slogan to appeal to the user and create a
+     positive user experience.
+    <br><br>
+    <p align="center">
+      <img src="media/landing-video.png">
+    </p>
+    <br>
