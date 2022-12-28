@@ -268,32 +268,27 @@ body {
 
 .fa-house {
     font-size: x-large;
-    color:chartreuse;
     color:rgb(24, 100, 151);
     color: white;
 }
 
 .fa-clipboard-list {
     font-size: x-large;
-    color:chartreuse;
     color: white;   
 }
 
 .fa-hourglass-start{
     font-size:x-large;
-    color: chartreuse;
     color: white;
 }
 
 .fa-award {
-    font-size: x-large;
-    color:chartreuse;  
+    font-size: x-large; 
     color: white;
 }
 
 .count {
     display: inline;
-    color:chartreuse;
     color: white;
     font-size:x-large;
     font-weight: bolder;
@@ -438,12 +433,12 @@ body {
   margin-bottom: 3%;
 
   }
-  
+
   #save-btn {
     font-size: 1rem;
     border-radius: 7%;
     padding: 0.7% 4%;
-    background-color:rgb(24, 100, 151);
+    background-color:#186497;
     cursor: pointer;
     color: white;
   }
@@ -462,7 +457,7 @@ body {
    #btn2-result {
      margin-left: 5%;
      padding: 1% 2%;
-     background-color:rgb(114, 23, 150);
+     background-color:#721796;
      font-size: 1rem;
    }
  
@@ -486,6 +481,7 @@ body {
 
 #h2-highscore{
   text-align: center;
+  margin-top: 1%;
 }
 
 #div-table {
@@ -499,7 +495,7 @@ body {
 .table-input{
   padding: 1%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 } 
 
 #score-nav {
@@ -509,9 +505,19 @@ body {
   padding-bottom:1%;
 }
 
+.nav-div-high  {
+  margin-left: 3%;
+}
+
+@media screen and (max-width: 700px){
+
+  .container-div {
+    width: 92%;
+    margin: 50% 4%;
+}
 
 
 
-
+}
 
 
