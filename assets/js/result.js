@@ -38,7 +38,7 @@
         //updating highscore
         // converting array into string using JSON stringify() method
         localStorage.setItem('topScore', JSON.stringify(topScore));
-         window.location.assign('/index.html');
+         window.location.assign('index.html');
     };
 
         let saveResult = document.forms[0];

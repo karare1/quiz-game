@@ -142,7 +142,7 @@ function nextQuestion() {
   //saving the player's result in a local storage
     localStorage.setItem('totalResult', scoreCount.innerText);
   // if here are no more questions in the array (all questions are answered), go to the result page and reveal the quiz result 
-    return window.location.assign('/result.html');
+    return window.location.assign('result.html');
   };
 
   // increment questions
