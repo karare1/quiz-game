@@ -17,9 +17,8 @@
 
            function nameInput() {
                if (uname.value.length <= 3) {
-                 unameText.innerText = "Please fill in this field.";
                  saveBtn.disabled = true;
-                //  saveBtn.classList.add('no-button');
+                
 
              } else if (uname.value.length >= 11) {
                 saveBtn.disabled = true;
