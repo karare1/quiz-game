@@ -169,7 +169,7 @@ None I am aware of.
 Deployment To GitHub Pages:  <br>
 
 1. Create a repository in GitHub <br><br>
-  ![Deploy-1](media/deploy-1.png) <br>
+  ![Deploy-1](assets/deploy/deploy-1.png) <br>
 
 2. Create the entry file for a site. GitHub Pages will look for an index.html as the entry file for the site  <br>
 
@@ -177,23 +177,23 @@ Deployment To GitHub Pages:  <br>
 
 4. On GitHub page, click on the site's repository on the left sidebar or alternatively click on the avatar icon and 
    then 'Your repositories' <br><br>
-   ![Deploy-2](media/deploy-2.png) &nbsp; &nbsp; &nbsp; &nbsp; ![Deploy-3](media/deploy-3.png) <br>
+   ![Deploy-2](assets/deploy/deploy-2.png) &nbsp; &nbsp; &nbsp; &nbsp; ![Deploy-3](assets/deploy/deploy-3.png) <br>
 
 5. In the repository, under the repository name (e.g. karare1/white-lines), click Settings  <br><br>
-  ![Deploy-4](media/deploy-4.png) <br>
+  ![Deploy-4](assets/deploy/deploy-4.png) <br>
 
 6. In the "Code and automation" section on the left sidebar, click on Pages  <br><br>
-  ![Deploy-5](media/deploy-5.PNG) <br>
+  ![Deploy-5](assets/deploy/deploy-5.PNG) <br>
 
 7. From the source section drop-down menu, select 'Deploy from a Branch'  <br>
    From the branch section drop-down menu, select 'main' and 'root' and then click on Save button  <br><br>
-  ![Deploy-6](media/deploy-6.PNG)  <br>
+  ![Deploy-6](assets/deploy/deploy-6.PNG)  <br>
 
 8. The link to the site will be automatically created. <br>
    To see the published site, under "GitHub Pages", click the site's URL  <br><br>
-  ![Deploy-7](media/deploy-7.PNG) <br>
+  ![Deploy-7](assets/deploy/deploy-7.png) <br>
 
-   The live link can be found here: https://karare1.github.io/white-lines/ <br>
+   The live link can be found here: https://karare1.github.io/quiz-game/ <br>
 
 
 
@@ -211,8 +211,21 @@ Also made use of:
 
 
 ## Credits 
+https://nikitahl.com/convert-array-like-collections-to-array/
+https://www.w3schools.com/howto/howto_css_modals.asp
+
+
+
 
 ### Content 
+- The icons were taken from [Font Awesome](https://fontawesome.com/)
+
+
+
+
+
+
+
 
 - The text for the Home page was taken from:  <br>
   [www.vilastennisacademy.com](https://vilastennisacademy.com/2022/vilas-tennis-academy-academia-de-tenis-en-mallorca/)  <br>
