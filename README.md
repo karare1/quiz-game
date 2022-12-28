@@ -118,17 +118,18 @@ __Top Score Page__
   - add audio effects to a quiz question
 
 ### Wireframes 
-- [Home Desktop](wireframes/home-desktop.png)
-- [Home Tablet](wireframes/home-tablet.png)
-- [Home Mobile](wireframes/home-mobile.png)
-- [Gallery Desktop](wireframes/gallery-desktop.png)
-- [Gallery Tablet](wireframes/gallery-tablet.png)
-- [Gallery Mobile](wireframes/gallery-mobile.png)
-- [Sign Up Desktop](wireframes/sign-up-desktop.png)
-- [Sign Up Tablet](wireframes/sign-up-tablet.png)
-- [Sign Up Mobile](wireframes/sign-up-mobile.png)
-  
-
+- [Home Desktop](assets/wireframes/Home%20Desktop.png)
+- [Home Tablet](assets/wireframes/Home%20Tablet.png)
+- [Home Mobile](assets/wireframes/Home%20Phone.png)
+- [Game Desktop](assets/wireframes/Game%20Desktop.png)
+- [Game Tablet](assets/wireframes/Game%20Tablet.png)
+- [Game Mobile](assets/wireframes/Game%20Phone.png)
+- [Result Desktop](assets/wireframes/Result%20Desktop.png)
+- [Result Tablet](assets/wireframes/Result%20Tablet.png)
+- [Result Mobile](assets/wireframes/Result%20Phone.png)
+- [Top Score Desktop](assets/wireframes/Top%20Score%20Desktop.png)
+- [Top Score Tablet](assets/wireframes/Top%20Score%20Tablet.png)  
+- [Top Score Mobile](assets/wireframes/Top%20Score%20Phone.png)
 
 
 
