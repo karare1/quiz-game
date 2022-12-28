@@ -21,7 +21,7 @@ Implementation:
 - Used the layout with a winter background image, winter colours as well as an appropriate title of the quiz and its initial message 
   to give users an early sense of what the quiz is about.
 - Created pop-up window to introduce the game and present a user with the quiz rules.
-- Made the quiz responsive, visible and esy to read on desktops, laptops, tablets and smartphones.
+- Made the quiz responsive, visible and easy to read on desktops, laptops, tablets and smartphones.
 - Created a simple intuitive design for easy navigation and using links for a smooth transport between pages
 - Made the quiz interactive by changing a chosen answer-option green if correct and red if incorrect. 
 - Added Question counter, Time counter and Score counter to the game page.
@@ -37,9 +37,9 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
   - ### Home Page
   This page gives an introduction to the quiz and important links to the game itself and to the top score page.  
   - ### Game Page
-  This is the core page of the quiz, it displays questions and answers-options as well as a navigation bar to see progress of the game.
+  This is the core page of the quiz; it displays questions and answers-options as well as a navigation bar to see progress of the game.
   - ### Result Page
-  It shows the result of the quiz and includes the possiblity for the player to save their score. 
+  It shows the result of the quiz and includes the possibility for the player to save their score. 
   - ### Top Score Page
   It displays a list of 7 best scores.
 
@@ -48,10 +48,10 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
 
 - __Home Page__
 - The home page is the screen the end user is presented with on page load.
-- All four webpages have the same winter themed background image and colors with silver background for the website content. 
-  The aim is to create a wintery atmoshere for players and bring back some memories of exciting winter events and activites.   
+- All four webpages have the same winter themed background image and colours with silver background for the website content. 
+  The aim is to create a wintery atmosphere for players and bring back some memories of exciting winter events and activities.   
   - _Header_
-    - Header has the same color design as other pages to support intuitivness of the entire website and the name of the quiz to give   
+    - Header has the same colour design as other pages to support intuitiveness of the entire website and the name of the quiz to give   
       a visitor a hit what the quiz is about. This intuitive layout enhances the user experience and make the website easy to use. 
   - _Body_
     - Body includes an encouraging message to challenge the visitor to click on the START button and play the game. 
@@ -59,7 +59,7 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
       - ABOUT button - clicking on the ABOUT button will display a pop-up box with the game rules. It includes all information the player needs to know before they start the game.
       - START button is placed in the middle and have a different colour to underlay its importance. Clicking on this button will redirect the player to the game page where they can start the quiz. 
       - TOP SCORE button will forward the visitor to the list of 7 best results. 
-    - Overall the body layout is simple and easy to understand and navigate the user. 
+    - Overall, the body layout is simple and easy to understand and navigate the user. 
   - _Footer_
     - Similarly to the header, the footer remains the same regardless of the webpage. 
       It contains a name of the production company and a year of production.
@@ -77,16 +77,16 @@ __Game Page__
       Elements to monitor the progress:
        - Question counter shows a player how many questions have been answered so far as well as the total number of questions. 
        - Time counter shows how many seconds are still left to complete the quiz. It is 120 seconds countdown timer and if a player 
-         runs out of time before completing the quiz they will be redirected back to to home page to have another go. 
+         runs out of time before completing the quiz, they will be redirected back to the home page to have another go. 
        - Score counter shows how many points a player has being received if answered a question correctly. For each correct answer a 
          player can get 100 points (1200 points maximum).
       Ability to monitor the progress during the quiz enhance the user experience and their motivation to achieve the highest score. 
 - _Body_  
     - Body shows a current question with four answers-options. Clicking on the one of these four options will deactivate the rest 
       three options and reveal if the chosen option is correct or not. The player will then be forwarded to the next question. Once a player clicked on an option it cannot be rechanged. This will enhance the fluidity and energy of the game and encourage a player to complete the quiz on time. 
-      Time counter will prompt the user to answer questions correctly but also within a short period of time. It means double challenge and it makes the game more intresting and appealing to users.
-      If the user does not answer all 12 questions in the allocated time the quiz will automatically finish and they will be taken back to the home page. This will encourage users to take the quiz again. Also, if a player answers the question incorrectly, the correct answer will not be revealed which makes the game more attactive encourage a user to play again and improve their score. 
-      Once all questions have been answered, a player is automaticly directed to the result page. 
+      Time counter will prompt the user to answer questions correctly but also within a short period of time. It means double challenge and it makes the game more interesting and appealing to users.
+      If the user does not answer all 12 questions in the allocated time the quiz will automatically finish and they will be taken back to the home page. This will encourage users to take the quiz again. Also, if a player answers the question incorrectly, the correct answer will not be revealed which makes the game more attractive encourage a user to play again and improve their score. 
+      Once all questions have been answered, a player is automatically directed to the result page. 
 - _Footer_ (please see the section about Footer above)   
     <br><br>
     <p align="center">
@@ -95,9 +95,9 @@ __Game Page__
 
 __Result Page__
   - It shows how many points a player scored in a quiz and the option to save the score. 
-    For saving the score a player has to insert a usename that can contain only alphabeths without any numbers, special characters or spaces. 
-  - If the username meet the criteria, clicking on the SAVE button will save the player's score and return a player to the home page. 
-    If the user does not want to save their score they have an option to click on Go Home button to take them to the home page or Play Again button to get to the game page and start playing again. 
+    For saving the score a player has to insert a username that can contain only alphabets without any numbers, special characters or spaces. 
+  - If the username meets the criteria, clicking on the SAVE button will save the player's score and return a player to the home page. 
+    If the user does not want to save their score, they have an option to click on Go Home button to take them to the home page or Play Again button to get to the game page and start playing again. 
   <br><br>
   <p align="center">
     <img src="media/nav-bar.png">
@@ -105,7 +105,7 @@ __Result Page__
 
 __Top Score Page__
   - This page displays a list of the 7 best scores. 
-    It also have the home icon for better navigation and it takes a user back to the home page.
+    It also has the home icon for better navigation and it takes a user back to the home page.
     <br><br>
     <p align="center">
       <img src="media/nav-bar.png">
