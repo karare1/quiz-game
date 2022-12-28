@@ -442,6 +442,13 @@ body {
     cursor: pointer;
     color: white;
   }
+
+  .no-button {
+    cursor: none;
+    color:#888;
+  }
+
+
   #save-div{
     text-align: center;
   }

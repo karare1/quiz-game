@@ -12,6 +12,32 @@
         //displaying the resut from local storage in the result page
         sumPoints.innerText = `${totalResult} / 1200`;
 
+
+        uname.addEventListener('input', nameInput);
+
+           function nameInput() {
+               if (uname.value.length <= 3) {
+                 unameText.innerText = "Please fill in this field.";
+                 saveBtn.disabled = true;
+                //  saveBtn.classList.add('no-button');
+
+             } else if (uname.value.length >= 11) {
+                saveBtn.disabled = true;
+            } else {
+                saveBtn.disabled = false;
+            }
+        };
+        
+            nameInput(); 
+
+
+
+
+
+
+
+
+
         function saveScore(event) {
          event.preventDefault();
 
