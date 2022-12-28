@@ -1,4 +1,4 @@
-const name = document.getElementById('username');
+        const uname = document.getElementById('username');
         const saveBtn = document.getElementById('save-btn');
         const sumPoints = document.getElementById('p-result');
         // get the player's result from the local storage
@@ -17,7 +17,7 @@ const name = document.getElementById('username');
 
         const result = {
             result: totalResult,
-            userName: name.value,
+            userName: uname.value,
         };
 
 
