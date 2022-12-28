@@ -110,70 +110,73 @@ let allQtn = [
 ];
 
 const questionQuiz = document.getElementById('question');
-console.log(questionQuiz);
+//using Array.from() to convert HTML collection to array (will output an array)
 const optionQuiz = Array.from(document.getElementsByClassName('option'));
 console.log(optionQuiz);
 const qtnCount = document.getElementById('qtn-count');
 const scoreCount = document.getElementById('score-count');
 const timeCount = document.getElementById("time-count");
-
-let questionShown = {};
+const pointsIfCorrect = 100;
+const numberOfQtn = 12;
+let questionShown;
 let countQtn = 0;
 let points = 0;
-let timeValue = 60;
-let listOfQtn = [];
+let time = 120;
+let listOfQtn;
 let selectAwr;
 
 
-const pointsIfCorrect = 100;
-const numberOfQtn = 12;
-
-
-// startGame = () => {
 function startGame() {
   countQtn = 0;
   points = 0;
-  // runTimer();
+  time = 120;
+//using spread operator to create a new array (copy the questions array above into listOfQtn)
   listOfQtn = [...allQtn];
-  console.log(listOfQtn);
   nextQuestion();
 };
-startTimer(60);
+
+runTime(120);
+
 function nextQuestion() {
   if (listOfQtn.length === 0 || countQtn >= numberOfQtn) {
+  //saving the player's result in a local storage
     localStorage.setItem('totalResult', scoreCount.innerText);
-    //go to the result page
+  // if here are no more questions in the array (all questions are answered), go to the result page and reveal the quiz result 
     return window.location.assign('/result.html');
   };
 
+  // increment questions
   countQtn++;
   qtnCount.innerText = countQtn + '/' + numberOfQtn;
 
+  //get random question from 1-12 (get random number and convert it to integer) 
   const randomQtnInx = Math.floor(Math.random() * listOfQtn.length);
   questionShown = listOfQtn[randomQtnInx];
+
+  // reveal a random question from the listOfQtn
   questionQuiz.innerText = questionShown.question;
 
   optionQuiz.forEach(function (option) {
     const revealOption = option.dataset['value'];
-    // console.log(revealOption);
+  // populate options for the question revealed using dataset (custom attribute)
     option.innerText = questionShown['option' + revealOption];
   });
-
+  //eliminate the current question from the list to avoid revealing the same question again
   listOfQtn.splice(randomQtnInx, 1);
+  //allow a user to answer the question
   selectAwr = true;
 };
-
-optionQuiz.forEach(function (option) {
-  option.addEventListener('click', function (e) {
+ //check if the reference of the option we clicked on is the same as correct answer reference 
+    optionQuiz.forEach(function (option) {
+    option.addEventListener('click', function (e) {
     if (!selectAwr) return;
 
     selectAwr = false;
     const clickedOptionEl = e.target;
-    console.log(clickedOptionEl);
     const clickedOptionInx = clickedOptionEl.dataset['value'];
 
     let correctIncorrect = 'incorrect';
-
+    // apply correct or incorrect class to the clicked option based on the correct answer index
     if (clickedOptionInx == questionShown.correct) {
       correctIncorrect = 'correct';
     };
@@ -182,13 +185,14 @@ optionQuiz.forEach(function (option) {
 
     };
 
+    //function to count score based on the questions answered correctly
     function addScore() {
       if (clickedOptionInx == questionShown.correct) {
         scoreCount.innerText = (++points) * pointsIfCorrect;
       };
     };
     addScore();
-
+    // get a little bit of time before switch to the next question and removed the class 
     setTimeout(function () {
       clickedOptionEl.classList.remove(correctIncorrect);
       nextQuestion();
@@ -197,21 +201,23 @@ optionQuiz.forEach(function (option) {
   });
 });
 
-function startTimer(){
-  setInterval(function() { // time loop
-      if(timeValue <= 0 ) {
-          clearInterval(timeValue = 0); // prevent time from going into negative
-          return window.location.assign("index.html"); //return to end page when time is up
+// function to activate the timer (1200s)
+function runTime() {
+  setInterval(function() {
+      if(time <= 0 ) {
+          clearInterval(time = 0); 
+          //return to home page when time is up
+          return window.location.assign("index.html");
       }
-      if(timeValue < 10 && timeValue > 0 || timeValue === 0){
+      //if less then 10 sec, the timeer will change to red
+      if(time < 10 && time > 0 || time === 0){
               timeCount.style.color = "red";
           }
       
-      timeCount.innerHTML = timeValue;
-      timeValue  -=1;
-  }, 1000) ; // set counter variable interval to seconds
-}
-
+      timeCount.innerHTML = time;
+      time  -=1;
+  }, 1000);
+};
 
 startGame();
 
