@@ -235,7 +235,7 @@ body {
 
 .container-div-index {
     width: 92%;
-    margin: 12% 4%;
+    margin: 12% 4.5%;
 }
 .btn-main {
   width: 14rem;
@@ -397,7 +397,7 @@ body {
   
 @media screen and (max-width: 1000px){
   
-  .container-div-index {
+  .container-div-game {
     width: 85%;
     margin: 20% 6%;
 }
@@ -429,13 +429,22 @@ body {
     text-align: left;
     display: block;
   }
-  
+  .container-div-game {
+    width: 92%;
+    margin: 12% 4%;
+}
+
   }
 
 @media screen and (max-width: 400px){
   .nav-div-home {
     margin-right: 2%;
   }
+
+  .container-div-game {
+    width: 92%;
+    margin: 12% 4%;
+}
 
   .nav-div {
     margin-right: 2%;
