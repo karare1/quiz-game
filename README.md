@@ -133,14 +133,55 @@ __Top Score Page__
 
 
 
-
-
-
-
-
-
-
 ## Testing 
+
+### Validator Testing 
+
+Testing of implemented features: 
+
+ - HOME PAGE Testing
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| ABOUT button  | Click the button | Open a pop-up box with introduction and the game rules | Works as expected |
+| START button  | Click the button| Player is forwarded to the game page and can start playing | Works as expected |
+| TOP SCORE button  | Click the button| It will take the player to the top-score page to check the leaderboard | Works as expected |
+
+- GAME PAGE Testing
+
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| HOME buton  | Click the button | Take a player to the home page anytime during the game | Works as expected |
+| QUESTION counter  | Automatic feature| Show what question is the player currently on, onwards counting | Works as expected |
+| TIMER  | Automatic feature | Start counting down automaticaly when the quiz appears on the screen | Works as expected |
+| TIMER  | Automatic feature | For the last ten seconds the time text will change to red | Works as expected |
+| TIMER  | Automatic feature | When time is up before aswering all questions, a player will return to the home page | Works as expected |
+| SCORE counter | Click on the correct answer | Clicking on the corrrect answer will increase the score by 100 points| Works as expected |
+| SCORE counter|  Click on the incorrect answer|  Clicking on the incorrect answer will not change the score| Works as expected |
+| ANSWERS options  | Click on a one of 4 answers-options | Clicking on an option will disable the remaining three options | Works as expected |
+| ANSWERS options  | Click on a one of 4 answers-options | The clicked option will change to green if correct and score will update | Works as expected |
+| ANSWERS options  | Click on a one of 4 answers-options | The clicked option-button will change to red if incorrect and score will remain unchanged | Works as expected |
+| Next question  | Automatic feature | Clicking on an answer-option will evaluate the correctness and after 2 seconds a new question will be retieved|  Works as expected |
+| Last question  | Automatic feature | Clicking on the last answer-option will evaluate the correctness and then forward the player to the result page|  Works as expected |
+
+- RESULT PAGE Testing
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Result  | Automatic feature | Correct score will appear on the result page | Works as expected |
+| USERNAME  | Enter name | Only text of min 3 and max 10 alphabets is excepted, no numbers or spaces  | Works as expected |
+| SAVE button  | Click the button| Saving the player's score and take them back to the home page | Works as expected |
+| SAVE button  | Click the button| Input validation - not saving the score if the entered username does not meet the relevant criteria  | Works as expected |
+| GO HOME buton  | Click the button | Take a player to the home page if they do not want to save the score | Works as expected |
+| PLAY AGAIN buton  | Click the button | Take a player to the game page and they can start the quiz again without saving their score | Works as expected |
+
+- TOP SCORE PAGE Testing
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Saved result | click on TOP SCORE button | Correct score against correct name saved | Works as expected |
+| 7 best scores | click on TOP SCORE button | Score appeared on the page only if it is within 7 best results  | Works as expected |
 
 
 ### Validator Testing 
@@ -153,8 +194,16 @@ __Top Score Page__
 - Lighthouse report: <br><br>
   ![Lighthouse report](media/lighthouse.png)
 
+
 - Further testing has been done with Chrome DevTools, making sure that responsiveness works correctly on all devices. 
-  After the deployment, I tested the site link focusing on the homepage, especially on the navigation bar in the header and whether the video in the homepage loads properly. 
+  After the deployment, I tested the website link focusing on the game and result page to check if all important featues worke as expected. No issues were detected. 
+
+
+
+
+
+
+
   I also checked the form on the registration page to ensure that the validation is working properly and that no issues were detected.
 
 - The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
