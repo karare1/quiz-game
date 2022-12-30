@@ -1,4 +1,4 @@
-![Logo](assets/images/favicon-32x32.png)
+![Logo](assets/favicon/favicon-32x32.png)
 # COOL QUIZ 
 
 The COOL Quiz was created for anyone who wants to test their knowledge or learns some new interesting facts about the winter season. The player can take the quiz yourself or it can be used as a family indoor activity for those cold and dark evenings.
