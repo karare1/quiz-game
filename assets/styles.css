@@ -694,6 +694,17 @@ body {
 #div-table {
   margin-left: 39%;
 }
+.container-div-score{
+  width: 85%;
+  margin: 26% 6%;
+}
+}
+@media screen and (max-width: 900px){
+.container-div-score{
+  width: 85%;
+  margin: 30% 6%;
+}
+
 }
 
 @media screen and (max-width: 700px){
@@ -721,4 +732,9 @@ margin-bottom: 4%;
 }
 }
 
+@media screen and (min-width: 1400px){
+  #div-table {
+    margin-left: 42%;
+  }
 
+}
