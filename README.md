@@ -68,6 +68,10 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
     <p align="center">
       <img src="assets/images/home-page.png">
     </p>
+    <br><br>
+    <p align="center">
+      <img src="assets/images/pop-up-box.png">
+    </p>
 
 __Game Page__
 - _Header_
