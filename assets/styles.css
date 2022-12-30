@@ -94,7 +94,7 @@ body {
 }
 
 #close-box {
-  color: #aaaaaa;
+  /* color: #aaaaaa; */
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -212,7 +212,14 @@ body {
 
 } */
 
+@media screen and (max-width: 1200px){
+  
+  .container-div-index {
+    width: 80%;
+    margin: 23% 9%;
+}
 
+}
 
 
 
@@ -221,7 +228,7 @@ body {
  
   .container-div-index {
     width: 75%;
-    margin: 12% 13%;
+    margin: 36% 13%;
 }
  
   #start-btn-div {
@@ -426,7 +433,7 @@ body {
   
   .container-div-game {
     width: 85%;
-    margin: 15% 6%;
+    margin: 26% 6%;
 }
 
   .nav-div-home {
@@ -583,14 +590,18 @@ body {
  }
 
 
+ @media screen and (max-width: 1200px) {
+ .container-div-result {
+  width: 85%;
+  margin: 26% 6%;
+}
 
-
-
+ }
 
  @media screen and (max-width: 945px) {
   .container-div-result {
-    width: 85%;
-    margin: 5% 8%;
+    width: 75%;
+    margin: 36% 13%;
 }
 
 #username {
