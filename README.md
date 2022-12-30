@@ -90,7 +90,7 @@ __Game Page__
 - _Footer_ (please see the section about Footer above)   
     <br><br>
     <p align="center">
-      <img src="media/nav-bar.png">
+      <img src="assets/images/game-page.png">
     </p>    
 
 __Result Page__
@@ -100,7 +100,7 @@ __Result Page__
     If the user does not want to save their score, they have an option to click on Go Home button to take them to the home page or Play Again button to get to the game page and start playing again. 
   <br><br>
   <p align="center">
-    <img src="media/nav-bar.png">
+    <img src="assets/images/result-page.png">
   </p>    
 
 __Top Score Page__
@@ -108,7 +108,7 @@ __Top Score Page__
     It also has the home icon for better navigation and it takes a user back to the home page.
     <br><br>
     <p align="center">
-      <img src="media/nav-bar.png">
+      <img src="assets/images/score-page.png">
     </p>    
 
 ### Features Left to Implement
@@ -205,10 +205,10 @@ Manual Testing of implemented features: <br><br>
 
 
 - Further testing has been done with Chrome DevTools, making sure that responsiveness works correctly on all devices. 
-  After the deployment, I tested the website link focusing on the game and result page to check if all important features works as expected. No issues were detected. 
+  After the deployment, I tested the website link focusing on the game and result page to check if all important features work as expected. No issues were detected. 
 
 - The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
-  Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitute 5580. 
+  Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitude 5580. 
   Each of the pages functioned well.
 
 ### Unfixed Bugs
