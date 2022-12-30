@@ -19,7 +19,7 @@ body {
     background-color: silver;
     position: absolute;
     width: 60%;
-    height: auto;
+    /* height: auto; */
     margin: 5% 19%;
 }
 
@@ -201,26 +201,32 @@ body {
 /* _____________________________________________________________media queries */
 
 
-/*___________________________ max 1024px */
-
-
-
-
 
 /*___________________________ max 1000px */
-@media screen and (max-width: 1100px){
+
+@media screen and (max-width: 1200px){
+  .container-div-index {
+    width: 75%;
+    margin: 10% 12%;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 945px){
  
   .container-div-index {
     width: 85%;
-    margin: 20% 6%;
+    margin: 10% 6%;
 }
  
 #start-btn-div {
   margin: 5% 0;
 }
-
- 
- 
  
   #pop-up-box {
     width: 80%;
@@ -235,7 +241,8 @@ body {
 
 .container-div-index {
     width: 92%;
-    margin: 12% 4.5%;
+    margin: 20% 4%;
+
 }
 .btn-main {
   width: 14rem;
@@ -308,6 +315,7 @@ body {
     font-size: x-large;
     color:rgb(24, 100, 151);
     color: white;
+    margin-top: 0.5%;
 }
 
 .fa-clipboard-list {
@@ -355,7 +363,7 @@ body {
 
 #answers div {
     text-align: center;
-    padding: 5% 0;
+    padding: 5% 0.3%;
     font-size: 1.5rem;
 }
 
@@ -399,7 +407,7 @@ body {
   
   .container-div-game {
     width: 85%;
-    margin: 20% 6%;
+    margin: 15% 6%;
 }
 
   .nav-div-home {
@@ -411,7 +419,7 @@ body {
 
   .container-div-game {
     width: 92%;
-    margin: 12% 4%;
+    margin: 5% 4%;
 }
 
   #answers {
@@ -431,7 +439,7 @@ body {
   }
   .container-div-game {
     width: 92%;
-    margin: 12% 4%;
+    margin: 5% 4%;
 }
 
   }
@@ -443,7 +451,7 @@ body {
 
   .container-div-game {
     width: 92%;
-    margin: 12% 4%;
+    margin: 5% 4%;
 }
 
   .nav-div {
@@ -460,9 +468,6 @@ body {
   height: auto;
   margin: 7% 19%;
 }
-
-
-
 
 
 #nav-bar-result {
@@ -506,7 +511,6 @@ body {
 
   #save-btn {
     font-size: 1rem;
-    border-radius: 7%;
     padding: 0.7% 4%;
     background-color:#186497;
     cursor: pointer;
@@ -534,16 +538,68 @@ body {
  
  #buttons-result {
      text-align: center;
-     margin: 2% 0;
-     margin-top: 3%;
+     margin: 3% 0;
+     /* margin-top: 3% 0 2%; */
  }
  #buttons-result a {
   color: white;
+  text-decoration: none;
  }
 
+
+
+
+
+
+ @media screen and (max-width: 945px) {
+  .container-div-result {
+    width: 85%;
+    margin: 5% 8%;
+}
+
+#username {
+  margin-top:4%;
+  margin-bottom: 3%;
+  
+}
+#save-btn {
+  margin-top:4%;
+  margin-bottom: 4%;
+}
+
+
+ }
+
+
+
+
  @media screen and (max-width: 700px){
+  .container-div-result {
+    width: 92%;
+    margin: 5% 4%;
+}
+.h-result {
+  margin-bottom: 3%;
 
+}
+#p-result {
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+#save-div{
+  margin-top:3%;
+  margin-bottom: 3%;
+}
 
+#save-btn {
+  margin-top:4%;
+  margin-bottom: 6%;
+}
+#username {
+  margin-top:4%;
+  margin-bottom: 3%;
+  
+}
 
 }
 
@@ -554,26 +610,24 @@ body {
   position: absolute;
   width: 60%;
   height: auto;
-  margin: 7% 19%;
+  margin: 9% 19%;
 }
 
 #h2-highscore{
   text-align: center;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 
 #div-table {
   list-style-position: inside;
-  vertical-align:baseline;
   margin-top: 4%;
-  margin-right: 45%;
-  width: 100%;
-
+  position: relative;
+  margin-left: 41%;
 }
+
 .table-input{
   padding: 1%;
-  text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
 } 
 
 #score-nav {
@@ -586,15 +640,37 @@ body {
 .nav-div-high  {
   margin-left: 3%;
 }
+.copyright-score {
+  margin-bottom: 1%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+#div-table {
+  margin-left: 39%;
+}
+}
 
 @media screen and (max-width: 700px){
 
   .container-div-score {
     width: 92%;
-    /* margin: 5% 4%; */
+    margin: 5% 4%;
 }
 
+.table-input{
+  padding: 3%;
+} 
+.copyright-score {
+  margin-top: 8%;
 
+}
+
+#h2-highscore{
+margin-top: 2%;
+margin-bottom: 4%;
+}
 
 }
 
