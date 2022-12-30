@@ -66,7 +66,7 @@ Cool Quiz consists of four webpages that all have an intuitive design for easy n
       This intuitive layout contributes to the users experience.
     <br><br>
     <p align="center">
-      <img src="media/nav-bar.png">
+      <img src="assets/images/home-page.png">
     </p>
 
 __Game Page__
