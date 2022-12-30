@@ -135,9 +135,8 @@ __Top Score Page__
 
 ## Testing 
 
-### Validator Testing 
+Manual Testing of implemented features: <br><br>
 
-Testing of implemented features: 
 
  - HOME PAGE Testing
 
@@ -146,6 +145,7 @@ Testing of implemented features:
 | ABOUT button  | Click the button | Open a pop-up box with introduction and the game rules | Works as expected |
 | START button  | Click the button| Player is forwarded to the game page and can start playing | Works as expected |
 | TOP SCORE button  | Click the button| It will take the player to the top-score page to check the leaderboard | Works as expected |
+ <br><br>
 
 - GAME PAGE Testing
 
@@ -164,6 +164,8 @@ Testing of implemented features:
 | ANSWERS options  | Click on a one of 4 answers-options | The clicked option-button will change to red if incorrect and score will remain unchanged | Works as expected |
 | Next question  | Automatic feature | Clicking on an answer-option will evaluate the correctness and after 2 seconds a new question will be retieved|  Works as expected |
 | Last question  | Automatic feature | Clicking on the last answer-option will evaluate the correctness and then forward the player to the result page|  Works as expected |
+<br><br>
+
 
 - RESULT PAGE Testing
 
@@ -175,6 +177,8 @@ Testing of implemented features:
 | SAVE button  | Click the button| Input validation - not saving the score if the entered username does not meet the relevant criteria  | Works as expected |
 | GO HOME buton  | Click the button | Take a player to the home page if they do not want to save the score | Works as expected |
 | PLAY AGAIN buton  | Click the button | Take a player to the game page and they can start the quiz again without saving their score | Works as expected |
+<br><br>
+
 
 - TOP SCORE PAGE Testing
 
@@ -182,6 +186,8 @@ Testing of implemented features:
 |-------------|------------|---------------------|-------------------|
 | Saved result | click on TOP SCORE button | Correct score against correct name saved | Works as expected |
 | 7 best scores | click on TOP SCORE button | Score appeared on the page only if it is within 7 best results  | Works as expected |
+| HOME buton  | Click the button | Take a player back to the home page  | Works as expected |
+<br><br>
 
 
 ### Validator Testing 
@@ -198,17 +204,9 @@ Testing of implemented features:
 - Further testing has been done with Chrome DevTools, making sure that responsiveness works correctly on all devices. 
   After the deployment, I tested the website link focusing on the game and result page to check if all important featues worke as expected. No issues were detected. 
 
-
-
-
-
-
-
-  I also checked the form on the registration page to ensure that the validation is working properly and that no issues were detected.
-
 - The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
   Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitute 5580. 
-  Each of the pages functioned well, but there is still room for improvement in terms of responsiveness and positioning of the elements on the website.
+  Each of the pages functioned well.
 
 ### Unfixed Bugs
 None I am aware of. 
@@ -249,38 +247,67 @@ Deployment To GitHub Pages:  <br>
 ## Technologies Used 
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 Also made use of:
 - [Font Awesome](https://fontawesome.com/)
-- [Google Fonts](https://fonts.google.com/)
+- [favicon.io](https://favicon.io/favicon-generator/)
 - [HTML Validator](https://validator.w3.org/)
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [Javascript Validator](https://jshint.com/)
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/)
 - [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)
 
 
 ## Credits 
-https://nikitahl.com/convert-array-like-collections-to-array/
-https://www.w3schools.com/howto/howto_css_modals.asp
-
+- [www.scrimba.com.com](https://scrimba.com/learn/learnjavascript)  <br>
+- [www.nikitahl.com.com](https://nikitahl.com/convert-array-like-collections-to-array/)  <br>
+- [www.www.classcentral.com](https://www.classcentral.com/course/youtube-build-a-quiz-app-with-html-css-and-javascript-45707/classroom)  <br>
+- [www.freecodecamp.org](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)  <br>
+- [www.developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)  <br>
+- [www.w3schools](https://www.w3schools.com/)  <br>
 
 
 
 ### Content 
-- The icons were taken from [Font Awesome](https://fontawesome.com/)
-
-
-
-
-
-
 
 
 - The text for the Home page was taken from:  <br>
-  [www.vilastennisacademy.com](https://vilastennisacademy.com/2022/vilas-tennis-academy-academia-de-tenis-en-mallorca/)  <br>
-  [www.lta.org.uk](https://www.lta.org.uk/play/parents-area/youth-programme/)  <br>
-  [www.downthelinetennis.co.uk](https://www.downthelinetennis.co.uk/testimonials-down-the-line-tennis-academy)  <br>
-  [www.helenricetennis.com.au](https://www.helenricetennis.com.au/)
+  [www.ultimatequizquestions.com](https://www.ultimatequizquestions.com/winter-trivia-questions/)  <br>
+  [www.quiztriviagames.com](https://www.quiztriviagames.com/winter-quiz/)  <br>
+  [www.wordsforlife.org.uk](https://wordsforlife.org.uk/activities/take-a-quiz-about-winter-celebrations/)  <br>
+
+
+
+### Media
+
+- Background image:  <br>
+  [winter.jpg](https://www.pexels.com/photo/aurora-borealis-624015/)  <br>
+  Photo by Frans van Heerden downloaded from Pexels
+- Icons were taken from [Font Awesome](https://fontawesome.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+[www.helenricetennis.com.au](https://www.helenricetennis.com.au/)
 
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - Grandslam pictures: <br>
@@ -289,15 +316,12 @@ https://www.w3schools.com/howto/howto_css_modals.asp
   [US Open logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcS4hwD1lwf3fYFSyZU9IDJSRd8JOKlkpOEIyesDMqHKvmbFvKRb&psig=AOvVaw0jLHDk55VwAtAsXAEVLB2_&ust=1665698857999000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCNCyr_fZ2_oCFQAAAAAdAAAAABAD)
 
 
-### Media
 
 - Logo1 and Logo2 created on:  [www.smashinglogo.com](https://smashinglogo.com/en/)
 
 - Video used on the Home Page: [Video](https://pixabay.com/videos/tennis-court-tennis-sports-overhead-35265/) <br>
   Video by VReel.co Stock Drone Video Platform from Pixabay 
 
-- Images used on the home and sign up page:  <br>
-  [img1.png](https://unsplash.com/photos/POMeFvO3CwE)  <br>
   Photo by Cristina Anne Costello on Unsplash  <br>
   [img2.png](https://pixabay.com/vectors/tennis-racket-game-sports-net-304408/) <br>
   Image by Clker-Free-Vector-Images from Pixabay 
@@ -343,14 +367,6 @@ https://www.w3schools.com/howto/howto_css_modals.asp
   Photo by Anna Shvets  <br>
   [tennis-gallery-12.png](https://www.pexels.com/photo/a-woman-in-black-top-and-white-skirt-playing-tennis-8652578/)  <br>
   Photo by Dre Dawkcide
-
-
-
-
-
-
-
-
 
 The website White Lines was developed with the goal of attracting people of all ages and tennis abilities in the Penarth and Cardiff areas to pick up a tennis racquet and join our academy. 
 It hopes to engage parents to enroll their children in tennis lessons as well as adults who are just thinking of starting to play tennis as complete beginners or those who are looking for ways to improve their game.
@@ -473,4 +489,4 @@ This website will be helpful to aspiring tennis players in order to find out all
     <p align="center">
       <img src="media/form.png">
     </p>
-    <br>
+    <br> -->
