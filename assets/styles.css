@@ -202,15 +202,15 @@ body {
 
 
 
-/*___________________________ max 1000px */
+/*___________________________ max 1200px */
 
-@media screen and (max-width: 1200px){
+/* @media screen and (max-width: 1200px){
   .container-div-index {
     width: 75%;
     margin: 10% 12%;
 }
 
-}
+} */
 
 
 
@@ -220,12 +220,12 @@ body {
 @media screen and (max-width: 945px){
  
   .container-div-index {
-    width: 85%;
-    margin: 10% 6%;
+    width: 75%;
+    margin: 12% 13%;
 }
  
-#start-btn-div {
-  margin: 5% 0;
+  #start-btn-div {
+    margin: 5% 0;
 }
  
   #pop-up-box {
@@ -241,7 +241,7 @@ body {
 
 .container-div-index {
     width: 92%;
-    margin: 20% 4%;
+    margin: 10% 4%;
 
 }
 .btn-main {
@@ -283,7 +283,7 @@ body {
   background-color: silver;
   position: absolute;
   width: 60%;
-  height: auto;
+  /* height: auto; */
   margin: 7% 19%;
 }
 
@@ -401,9 +401,28 @@ body {
 
 /* _____________________________________________________________media queries */
 
+/* @media screen and (min-width: 1400px){}
+@media screen and (max-width: 1450px)
+ {
+.container-div-game {
+  width: 60%;
+  margin: 20% 6%;
+
+  background-color: silver;
+  position: absolute;
+  width: 60%;
+  height: auto;
+  margin: 7% 19%;
+}
+
+
+.nav-div-home {
+  margin-right: 46%;
+}
+} */
 /*___________________________ max 700px */
   
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
   
   .container-div-game {
     width: 85%;
@@ -411,12 +430,29 @@ body {
 }
 
   .nav-div-home {
-    margin-right: 20%;
+    margin-right: 38%;
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 945px) {
+  .container-div-game {
+    width: 85%;
+    margin: 26% 6%;
+}
 
+#answers {
+  grid-template-columns: repeat(1, 1fr);
+}
+.nav-div-home {
+  margin-right:33%;
+}
+}
+
+
+@media screen and (max-width: 700px){
+  .fa-house {
+    margin-left:2%;
+  }
   .container-div-game {
     width: 92%;
     margin: 5% 4%;
@@ -465,7 +501,7 @@ body {
   background-color: silver;
   position: absolute;
   width: 60%;
-  height: auto;
+  /* height: auto; */
   margin: 7% 19%;
 }
 
@@ -617,7 +653,7 @@ body {
   background-color: silver;
   position: absolute;
   width: 60%;
-  height: auto;
+  /* height: auto; */
   margin: 9% 19%;
 }
 
@@ -679,7 +715,10 @@ body {
 margin-top: 2%;
 margin-bottom: 4%;
 }
-
+#div-table {
+ 
+  margin-left: 26%;
+}
 }
 
 
