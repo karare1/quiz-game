@@ -145,10 +145,10 @@ Manual Testing of implemented features: <br><br>
 | ABOUT button  | Click the button | Open a pop-up box with introduction and the game rules | Works as expected |
 | START button  | Click the button| Player is forwarded to the game page and can start playing | Works as expected |
 | TOP SCORE button  | Click the button| It will take the player to the top-score page to check the leaderboard | Works as expected |
+ 
  <br><br>
 
 - GAME PAGE Testing
-
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
