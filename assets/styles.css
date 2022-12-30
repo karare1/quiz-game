@@ -565,8 +565,14 @@ body {
 #save-btn {
   margin-top:4%;
   margin-bottom: 4%;
+  font-size: 1.2rem;
 }
-
+#buttons-result a {
+  font-size: 1.2rem;;
+ }
+ #username {
+  height: 1.5rem;
+}
 
  }
 
@@ -576,7 +582,7 @@ body {
  @media screen and (max-width: 700px){
   .container-div-result {
     width: 92%;
-    margin: 5% 4%;
+    margin: 8% 4%;
 }
 .h-result {
   margin-bottom: 3%;
@@ -600,7 +606,9 @@ body {
   margin-bottom: 3%;
   
 }
-
+#username {
+  height:1.5rem;
+}
 }
 
 /* ------------------------------------topscore.html--------------------------------------------------- */
