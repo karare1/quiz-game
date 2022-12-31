@@ -7,7 +7,7 @@ The COOL Quiz was created for anyone who wants to test their knowledge or learn 
 
 ## User Experience (UX)
 
-# User Stories 
+### User Stories 
 
 - As a user, I would like to understand the purpose of the website and what is being tested by the quiz before I start.
 - As a user, I would like to have the option to read the instructions, so that I can understand how to play the game.
@@ -18,7 +18,7 @@ The COOL Quiz was created for anyone who wants to test their knowledge or learn 
 - As a user, I would like to see my final score, have an option to save my best score and play again.
 
 
-# Implementation 
+### Implementation 
 
 - Used a layout with a winter background image, winter colours and picked an appropriate quiz title as well as a catchy initial        
   message to give users an early sense of what the quiz is about.
