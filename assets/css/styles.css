@@ -196,7 +196,9 @@ body {
 #pop-up-box {
   width: 90%;
   }
-
+#pop-up {
+  padding-top: 1%;
+}
 }
 
 /*___________________________ max 700px */
