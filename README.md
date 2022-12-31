@@ -241,8 +241,10 @@ Manual Testing of implemented features: <br><br>
   Each of the pages functioned well.
 
 ### Fixed Bugs
-preventDefault() removed html validation (min 4 and max 10 letters)
-I have applied an extra function in javascript to prevent submitting usernames that do not meet the criteria
+- preventDefault() removed html validation (min 4 and max 10 letters) <br>
+  I have applied an extra function in javascript to prevent submitting usernames that do not meet the criteria
+- favicon link to webmanifest showed error in console <br>
+  Resolved by adding the crossorigin attribute
 
 ### Unfixed Bugs
 None I am aware of. 
