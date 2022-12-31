@@ -5,7 +5,7 @@ let allQtn = [
     option1: 'Chinophobia',
     option2: 'Hydrophobia',
     option3: 'Nephophobia',
-    option4: 'Pteromerhanophobia',
+    option4: 'Pogonophobia',
     correct: 1
   },
 
@@ -133,7 +133,7 @@ function startGame() {
 //using spread operator to create a new array (copy the questions array above into listOfQtn)
   listOfQtn = [...allQtn];
   nextQuestion();
-};
+}
 
 runTime(120);
 
@@ -143,7 +143,7 @@ function nextQuestion() {
     localStorage.setItem('totalResult', scoreCount.innerText);
   // if here are no more questions in the array (all questions are answered), go to the result page and reveal the quiz result 
     return window.location.assign('result.html');
-  };
+  }
 
   // increment questions
   countQtn++;
@@ -157,15 +157,17 @@ function nextQuestion() {
   questionQuiz.innerText = questionShown.question;
 
   optionQuiz.forEach(function (option) {
-    const revealOption = option.dataset['value'];
+    const revealOption = option.dataset.value;
   // populate options for the question revealed using dataset (custom attribute)
     option.innerText = questionShown['option' + revealOption];
   });
+
   //eliminate the current question from the list to avoid revealing the same question again
   listOfQtn.splice(randomQtnInx, 1);
   //allow a user to answer the question
   selectAwr = true;
-};
+}
+
  //check if the reference of the option we clicked on is the same as correct answer reference 
     optionQuiz.forEach(function (option) {
     option.addEventListener('click', function (e) {
@@ -173,24 +175,24 @@ function nextQuestion() {
 
     selectAwr = false;
     const clickedOptionEl = e.target;
-    const clickedOptionInx = clickedOptionEl.dataset['value'];
+    const clickedOptionInx = clickedOptionEl.dataset.value;
 
     let correctIncorrect = 'incorrect';
     // apply correct or incorrect class to the clicked option based on the correct answer index
     if (clickedOptionInx == questionShown.correct) {
       correctIncorrect = 'correct';
-    };
+    }
     clickedOptionEl.classList.add(correctIncorrect);
     if (clickedOptionInx == questionShown.incorrect) {
 
-    };
+    }
 
     //function to count score based on the questions answered correctly
     function addScore() {
       if (clickedOptionInx == questionShown.correct) {
         scoreCount.innerText = (++points) * pointsIfCorrect;
-      };
-    };
+      }
+    }
     addScore();
     // get a little bit of time before switch to the next question and removed the class 
     setTimeout(function () {
@@ -217,7 +219,7 @@ function runTime() {
       timeCount.innerHTML = time;
       time  -=1;
   }, 1000);
-};
+}
 
 startGame();
 
