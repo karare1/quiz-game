@@ -16,38 +16,45 @@
 </head>
 <body>
     <div class="container-div-result">
+    <header>
         <div id="nav-bar-result"></div>
+    </header>
+    
+    <section>
         <h2 class="h-result">Thank you for taking this quiz!</h2>
         <h3 class="h-result" >Your result: </h3>
         <p id='p-result'></p>
-    <form>
-        <div id="label-result">
-            <label for="username">To save your score please enter your name:</label>
-        </div>
+
+        <form>
+            <div id="label-result">
+                <label for="username">To save your score please enter your name:</label>
+            </div>
        
-        <div id='user-result'>
-            <input type="text" oninput="this.value=this.value.replace(/[^a-z]/gi,'')" id="username" name="username" placeholder="username" minlength="3" required>  
-        </div>
+            <div id='user-result'>
+                <input type="text" oninput="this.value=this.value.replace(/[^a-z]/gi,'')" id="username" name="username" placeholder="username" minlength="3" required>  
+            </div>
 
-        <p id="user-result-p">(Please enter min of 3 and max of 10 characters; only alphabets are allowed.)</p>
+            <p id="user-result-p">(Please enter min of 3 and max of 10 characters; only alphabets are allowed.)</p>
   
-        <div id="save-div">
-        <input id='save-btn' type="submit" value="Save">
-        </div>      
-    </form>
+            <div id="save-div">
+                <input id='save-btn' type="submit" value="Save">
+            </div>      
+        </form>
 
-    <div id='buttons-result'>
-        <a id='anch-id1' href="index.html" aria-label="Home page" >Go Home</a></button>
-        <a id='anch-id2' href="game.html" aria-label="Game page">Play Again</a></button>
-    </div>
+        <div id='buttons-result'>
+            <a id='anch-id1' href="index.html" aria-label="Home page" >Go Home</a>
+            <a id='anch-id2' href="game.html" aria-label="Game page">Play Again</a>
+        </div>        
+    </section>
 
     <footer>
         <p class="copyright">karare <i class="fa-solid fa-paw"></i> 2022 </p>
     </footer>
-    </div>     
+    </div> 
+
     <script src="assets/js/result.js"></script>  
     <noscript>
-    Your browser does not support JavaScript!
+        Your browser does not support JavaScript!
     </noscript>
 </body>
 </html>
