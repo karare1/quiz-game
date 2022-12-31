@@ -196,6 +196,7 @@ body {
 #pop-up-box {
   width: 90%;
   }
+
 #pop-up {
   padding-top: 2%;
 }
@@ -245,7 +246,7 @@ body {
 }
 }
 
-/*___________________________ max 1400px */
+/*___________________________ min 1400px */
 @media screen and (min-width: 1400px) {
 
 .container-div-index {
@@ -471,7 +472,7 @@ body {
 }
 }
 
-/*___________________________ max 1400px */
+/*___________________________ min 1400px */
 @media screen and (min-width: 1400px) {
 
 .container-div-game {
@@ -645,7 +646,7 @@ body {
 }
 }
 
-/*___________________________ max 1400px */
+/*___________________________ min 1400px */
 
 @media screen and (min-width: 1400px) {
 
@@ -757,7 +758,7 @@ body {
 }
 
 
-/*___________________________ max 1400px */
+/*___________________________ min 1400px */
 
 @media screen and (min-width: 1400px){
 
