@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest" crossorigin="use-credentials">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>COOL QUIZ</title>
 </head>
 <body>
@@ -31,7 +31,7 @@
             </div>
        
             <div id='user-result'>
-                <input type="text" oninput="this.value=this.value.replace(/[^a-z]/gi,'')" id="username" name="username" placeholder="username" minlength="3" required>  
+                <input type="text" oninput="this.value=this.value.replace(/[^a-z]/gi,'')" id="username" name="username" placeholder="username" minlength="4" maxlength="10" required>  
             </div>
 
             <p id="user-result-p">(Please enter min of 3 and max of 10 characters; only alphabets are allowed.)</p>

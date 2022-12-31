@@ -6,9 +6,7 @@ const totalResult = localStorage.getItem('totalResult');
 
 // an array of highscores 
 const topScore = JSON.parse(localStorage.getItem('topScore')) || [];
-// console.log(topScore);
 
-// const highestResults = 7;
 //displaying the resut from local storage in the result page
 sumPoints.innerText = `${totalResult} / 1200`;
 
