@@ -2,7 +2,7 @@
 # COOL QUIZ 
 
 The COOL Quiz was created for anyone who wants to test their knowledge or learn some new interesting facts about the winter season. The players can take the quiz on their own or it can be used as a family indoor activity for those cold and dark evenings. The quiz has 12 multiple choice questions with a 120-second timer and a Top Score page so the players can save their best score. It hopes to engage all age groups or individuals of various interests, not just 'winter fans'.
-![Responsive Design](media/responsive.png)
+![Responsive Design](assets/images/responsive-img.png)
 
 
 ## User Experience (UX)
@@ -174,8 +174,8 @@ Manual Testing of implemented features: <br><br>
 | ANSWERS options  | Click on one of the 4 answers-options | Clicking on an option will disable the remaining three options | Works as expected |
 | ANSWERS options  | Click on one of 4 answer options | The clicked option will change to green if correct and the score will be updated | Works as expected |
 | ANSWERS options  | Click on one of 4 answer options | The clicked option will change to red if incorrect and the score will remain unchanged | Works as expected |
-| Next question  | Automatic feature | Clicking on an answer option will evaluate the correctness and after 2 seconds a new question will appear| Works as expected |
-| Last question | Automatic feature | Clicking on the last answer option will evaluate the correctness and then forward the player to the result page |  Works as expected |
+| NEXT question  | Automatic feature | Clicking on an answer option will evaluate the correctness and after 2 seconds a new question will appear| Works as expected |
+| LAST question | Automatic feature | Clicking on the last answer option will evaluate the correctness and then forward the player to the result page |  Works as expected |
 
 <br><br>
 
@@ -183,7 +183,7 @@ Manual Testing of implemented features: <br><br>
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Result  | Automatic feature | The correct score will appear on the result page | Works as expected |
+| RESULT  | Automatic feature | The correct score will appear on the result page | Works as expected |
 | USERNAME  | Enter name | Only text of min 3 and max 10 letters is excepted, no numbers or spaces | Works as expected |
 | SAVE button  | Click the button| Saves the players’ score and takes them back to the home page | Works as expected |
 | SAVE button  | Click the button| Input validation – do not save the score if the entered username does not meet the relevant criteria | Works as expected |
@@ -213,7 +213,7 @@ Manual Testing of implemented features: <br><br>
 - CSS
   The W3C Jigsaw Validator was used to validate the CSS of the website. <br>
   All errors have been corrected. <br>
-  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkarare1.github.io%2Fwhite-lines%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkarare1.github.io%2Fquiz-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - JSHint Services were used to validate Javascript <br>
   All errors syntax errors corrected <br>
