@@ -668,7 +668,7 @@ body {
   list-style-position: inside;
   margin-top: 4%;
   position: relative;
-  margin-left: 41%;
+  margin-left: 43%;
 }
 
 .table-input{
@@ -755,7 +755,7 @@ body {
 @media screen and (min-width: 1400px){
 
 #div-table {
-  margin-left: 42%;
+  margin-left: 45%;
 }
 
 .container-div-score{
