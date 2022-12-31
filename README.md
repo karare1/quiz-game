@@ -224,7 +224,7 @@ Manual Testing of implemented features: <br><br>
 
 
 - The WAVE Web Accessibility Evaluation Tool was used to check accessibility of the website: <br>
-  [Wave Web report](assets/lighthouse/wave-evaluation.png)
+  [Wave Web report](assets/images/wave-evaluation.png)
 
 - Lighthouse reports: <br><br>
   [Lighthouse report Index](assets/lighthouse/lighthouse-report-index.png) <br>
@@ -239,6 +239,10 @@ Manual Testing of implemented features: <br><br>
 - The website was assessed in various browsers: Mozilla Firefox, Google Chrome and Microsoft Edge.
   Live link was tested on Huawei P30, Samsung A50 to test smaller screen sizes, on a small display laptop - HP ProBook 430 and also on a larger display laptop - Dell Latitude 5580. <br>
   Each of the pages functioned well.
+
+### Fixed Bugs
+preventDefault() removed html validation (min 4 and max 10 letters)
+I have applied an extra function in javascript to prevent submitting usernames that do not meet the criteria
 
 ### Unfixed Bugs
 None I am aware of. 

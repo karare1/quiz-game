@@ -1,0 +1,767 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+
+/* ------------------------------------index.html-------------------------------------------------- */
+
+body {
+  background-image: url('../images/winter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.container-div-index {
+  background-color: silver;
+  position: absolute;
+  height: auto;
+  width: 60%;
+  margin: 5% 19%;
+}
+
+#nav-bar-index {
+  height: 3rem;
+  background-color:rgb(114, 23, 150);
+}
+
+#h1-quiz {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3% auto;
+}
+
+#par-start {
+  text-align: center;
+  color:rgb(24, 100, 151);
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+#all-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-main {
+  width: 20rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 3rem;
+ }
+
+#pop-up {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 5%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#pop-up-box {
+  margin: auto;
+  padding: 1%;
+  border: 1px solid #888;
+  width: 60%;
+  font-size: 1.3rem;
+  background-color: silver;
+  
+}
+
+#close-box {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close-box:hover,
+#close-box:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#text-div {
+  padding: 1.5%;
+}
+
+.pop-main-text {
+  text-align: center;
+  margin-bottom: 3%;
+  color:rgb(24, 100, 151);
+}
+
+#pop-up-box p {
+  margin-bottom: 1%;
+}
+
+.pop-p {
+  font-weight: 700;
+  margin-top: 2%;
+
+}
+
+.fa-snowflake {
+  color:rgb(24, 100, 151);
+  padding-right: 2%;
+}
+
+.fa-mug-hot {
+  margin-left: 1%;
+  color:rgb(24, 100, 151);
+}
+
+#ul-rules {
+  list-style-type:none;
+  }
+  
+
+.container-div-index a {
+  text-decoration: none;
+  color: black;
+}
+
+#link-to-quizz {
+  display: block;
+  color: white;
+  background-color:rgb(114, 23, 150);
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  border: 1px solid dimgray;
+}
+
+#link-to-highscore {
+  width: 20rem;
+  display: block;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 1px solid dimgray;
+  background-color:rgb(236, 235, 235);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 1%;
+}
+
+/* _____________________________________________________________media queries */
+
+
+/*___________________________ max 1200px */
+
+@media screen and (max-width: 1200px) {
+  
+.container-div-index {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+
+}
+
+}
+/*___________________________ max 945px */
+
+
+@media screen and (max-width: 945px){
+ 
+.container-div-index {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 9.5%;
+}
+ 
+#pop-up-box {
+  width: 80%;
+  font-size: initial;
+  }
+
+
+}
+
+/*___________________________ max 700px */
+
+@media screen and (max-width: 700px){
+
+.container-div-index {
+  width: 92%;
+  margin: 10% 4%;
+}
+
+.btn-main {
+  width: 14rem;
+  height: 2.8rem;
+}
+
+#link-to-quizz {
+  width: 14rem;
+}
+
+#link-to-highscore {
+  width: 14rem;
+}
+
+.copyright {
+  margin-top: 15%;
+}
+
+#pop-up-box {
+  width: 80%;
+  font-size: initial;
+}
+
+#text-div {
+  padding: 0.5%;
+}
+#par-start {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+}
+
+/*___________________________ max 1400px */
+@media screen and (min-width: 1400px) {
+
+.container-div-index {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 14%;
+}
+  
+}
+  
+/* ------------------------------------game.html--------------------------------------------------- */
+
+.container-div-game {
+  background-color: silver;
+  position: absolute;
+  width: 60%;
+  height: auto;
+  margin: 7% 19%;
+}
+
+
+#nav-bar {
+  text-align: right;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color:rgb(114, 23, 150);
+}
+
+.nav-div-home {
+  display: inline;
+  padding: 1%;
+  margin-right: 38%;
+}
+
+.nav-div-score {
+  margin-right: 4%;
+}
+
+.nav-div {
+  display: inline;
+  padding: 1%;
+  margin-right: 3%;
+}
+
+.fa-house {
+  font-size: x-large;
+  color:rgb(24, 100, 151);
+  color: white;
+  margin-top: 0.5%;
+}
+
+.fa-clipboard-list {
+  font-size: x-large;
+  color: white;   
+}
+
+.fa-hourglass-start{
+  font-size:x-large;
+  color: white;
+}
+
+.fa-award {
+  font-size: x-large; 
+  color: white;
+}
+
+.count {
+  display: inline;
+  color: white;
+  font-size:x-large;
+  font-weight: bolder;
+  padding: 1%;
+}
+
+#question {
+  font-size: 1.5rem;
+  margin-left: 13%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  width: 70%;
+  text-align: center;
+  color:rgb(58, 6, 107);
+  color:rgb(24, 100, 151);
+  font-weight: 900;
+}
+
+#answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width:70%;
+  margin-left: 15%;
+}
+
+#answers div {
+  text-align: center;
+  padding: 5% 0.3%;
+  font-size: 1.5rem;
+}
+
+.option {
+  background-color:rgb(24, 100, 151);
+  color: white;
+}
+
+.option:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px rgba(15 8 75/ 0.5);
+  transform: scale(1.0);
+}
+
+  .copyright-game {
+  margin-bottom: 1%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.correct {
+  background-color:forestgreen;
+}
+.correct:hover {
+  background-color:forestgreen; ;
+}
+
+.incorrect {
+  background-color:rgb(190, 19, 19);
+}
+
+.incorrect:hover {
+  background-color:rgb(190, 19, 19);
+}
+
+/* _____________________________________________________________media queries */
+
+/*___________________________ max 1200px */
+  
+@media screen and (max-width: 1200px){
+  
+.container-div-game {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.nav-div-home {
+  margin-right: 40%;
+}
+}
+
+/*___________________________ max 945px */
+
+@media screen and (max-width: 945px) {
+
+.container-div-game {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 9.5%;
+  }
+
+
+#answers {
+  grid-template-columns: repeat(1, 1fr);
+}
+.nav-div-home {
+  margin-right:33%;
+}
+}
+
+/*___________________________ max 700px */
+
+@media screen and (max-width: 700px){
+
+.fa-house {
+  margin-left:2%;
+}
+
+.container-div-game {
+  width: 92%;
+  margin: 5% 4%;
+}
+
+#answers {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.nav-div-home {
+  margin-right: 12%;
+}
+
+}
+
+/*___________________________ max 450px */
+
+@media screen and (max-width: 450px){
+  
+.nav-div-home {
+  text-align: left;
+  display: block;
+}
+.container-div-game {
+  width: 92%;
+  margin: 5% 4%;
+}
+
+}
+
+/*___________________________ max 400px */
+
+@media screen and (max-width: 400px){
+
+.nav-div-home {
+  margin-right: 2%;
+}
+
+.container-div-game {
+  width: 92%;
+  margin: 5% 4%;
+}
+
+.nav-div {
+  margin-right: 2%;
+  display: initial;
+}
+}
+
+/*___________________________ max 1400px */
+@media screen and (min-width: 1400px) {
+
+.container-div-game {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 14%;
+}
+
+.nav-div-home {
+  margin-right: 46%;
+}
+}
+    
+/* ------------------------------------result.html--------------------------------------------------- */
+.container-div-result {
+  background-color: silver;
+  position: absolute;
+  width: 60%;
+  height: auto;
+  margin: 5% 19%;
+}
+
+#nav-bar-result {
+  height: 3rem;
+  background-color:rgb(114, 23, 150);
+}
+
+.h-result {
+  text-align: center;
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+
+#p-result {
+  text-align: center;
+  font-size: 2rem;
+  }
+
+#label-result {
+  margin: 2%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#username {
+  padding: 1% 3%;
+  text-align: center;
+}
+
+#user-result {
+  text-align: center;
+  margin-top: 2%;
+}
+
+#user-result-p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 3%;
+}
+
+#save-btn {
+  font-size: 1rem;
+  padding: 0.7% 4%;
+  background-color:#186497;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 2%;
+}
+
+#save-div{
+  text-align: center;
+}
+
+#anch-id1 {
+  margin-right: 5%;
+}
+
+#anch-id2 {
+  margin-left: 5%;
+}
+ 
+#buttons-result {
+  text-align: center;
+  margin: 3% 0;
+}
+
+#buttons-result a {
+  color: white;
+  text-decoration: none;
+  background-color:#721796;
+  padding: 1% 3%;
+  font-size: 1rem;
+ }
+
+/* _____________________________________________________________media queries */
+
+/*___________________________ max 1200px */
+
+@media screen and (max-width: 1200px) {
+
+.container-div-result {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+ }
+
+ /*___________________________ max 945px */
+
+ @media screen and (max-width: 945px) {
+
+.container-div-result {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 9.5%;
+}
+
+#username {
+  margin-top:4%;
+  margin-bottom: 3%;
+  
+}
+#save-btn {
+  margin-top:4%;
+  margin-bottom: 4%;
+  font-size: 1.2rem;
+}
+#buttons-result a {
+  font-size: 1.2rem;;
+ }
+
+#username {
+  height: 1.5rem;
+}
+
+}
+
+/*___________________________ max 700px */
+
+ @media screen and (max-width: 700px){
+  .container-div-result {
+    width: 92%;
+    margin: 8% 4%;
+}
+.h-result {
+  margin-bottom: 3%;
+
+}
+#p-result {
+  margin-top:2%;
+  margin-bottom: 2%;
+}
+#save-div{
+  margin-top:3%;
+  margin-bottom: 3%;
+}
+
+#save-btn {
+  margin-top:4%;
+  margin-bottom: 6%;
+}
+#username {
+  margin-top:4%;
+  margin-bottom: 3%;
+  
+}
+#username {
+  height:1.5rem;
+}
+}
+
+/*___________________________ max 1400px */
+
+@media screen and (min-width: 1400px) {
+
+.container-div-result {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 14%;
+}  
+}
+
+/* ------------------------------------topscore.html--------------------------------------------------- */
+
+.container-div-score {
+  background-color: silver;
+  position: absolute;
+  width: 60%;
+  height: auto;
+  margin: 7% 19%;
+}
+
+#h2-highscore{
+  text-align: center;
+  margin-top: 2%;
+}
+
+#div-table {
+  list-style-position: inside;
+  margin-top: 4%;
+  position: relative;
+  margin-left: 41%;
+}
+
+.table-input{
+  padding: 1%;
+  font-size: 1.3rem;
+} 
+
+#score-nav {
+  height: 2rem;
+  background-color:rgb(114, 23, 150);
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+.nav-div-high  {
+  margin-left: 3%;
+}
+.copyright-score {
+  margin-bottom: 1%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+/* _____________________________________________________________media queries */
+
+/*___________________________ max 1200px */
+
+@media screen and (max-width: 1200px) {
+
+#div-table {
+  margin-left: 42%;
+}
+
+.container-div-score{
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+}
+
+/*___________________________ max 945px */
+@media screen and (max-width: 945px){
+
+.container-div-score{
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 9.5%; 
+}
+
+#div-table {
+  margin-left: 40%;
+}
+}
+
+/*___________________________ max 700px */
+@media screen and (max-width: 700px){
+
+.container-div-score {
+  width: 92%;
+  margin: 8% 4%;
+}
+
+.table-input{
+  padding: 3%;
+} 
+.copyright-score {
+  margin-top: 8%;
+}
+
+#h2-highscore{
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+#div-table {
+  margin-left: 30%;
+}
+}
+
+
+/*___________________________ max 1400px */
+
+@media screen and (min-width: 1400px){
+
+#div-table {
+  margin-left: 42%;
+}
+
+.container-div-score{
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 14%;
+}
+}
+
